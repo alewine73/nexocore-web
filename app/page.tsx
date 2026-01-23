@@ -268,11 +268,16 @@ export default function Home() {
           </div>
       </section>
 
-      {/* FOOTER */}
+     {/* FOOTER */}
       <footer className="border-t border-white/10 py-10 text-center text-gray-500 text-sm">
-        <p>&copy; 2025 NexoCore. Todos los derechos reservados.</p>
-        <p className="mt-2">Valladolid, España 🇪🇸</p>
+        <p>&copy; 2026 NexoCore. Todos los derechos reservados.</p>
+        
+        <div className="mt-4 flex justify-center gap-6">
+          <p>Valladolid, España 🇪🇸</p>
+          <span>|</span>
+          {/* AQUÍ ESTÁ EL ENLACE A LA PÁGINA LEGAL */}
+          <a href="/legal" className="text-gray-400 hover:text-white underline decoration-gray-700 underline-offset-4 transition-colors">
+            Política de Privacidad y Aviso Legal
+          </a>
+        </div>
       </footer>
-    </div>
-  );
-}
