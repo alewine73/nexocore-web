@@ -180,7 +180,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-gray-400 mb-2">Nexo Feedback</h3>
               <div className="mb-4">
                 <div className="text-3xl font-bold text-white">90€ <span className="text-sm font-normal text-gray-400">/mes</span></div>
-                <div className="text-xs text-gray-500">+ 150€ Setup único</div>
+                <div className="text-xs text-gray-500">+ 350€ Setup único</div>
               </div>
               <p className="text-sm text-gray-400 mb-6 border-b border-white/10 pb-6">
                 El escudo para tu reputación en Google. Filtra quejas y consigue 5 estrellas.
@@ -205,7 +205,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-white mb-2">Nexo Voice</h3>
               <div className="mb-4">
                 <div className="text-3xl font-bold text-white">150€ <span className="text-sm font-normal text-gray-400">/mes</span></div>
-                <div className="text-xs text-purple-300 font-bold">+ 300€ Setup único</div>
+                <div className="text-xs text-purple-300 font-bold">+ 500€ Setup único</div>
               </div>
               <p className="text-sm text-gray-300 mb-6 border-b border-white/10 pb-6">
                 Tu recepcionista inteligente. Atiende llamadas y agenda citas solo.
@@ -246,6 +246,26 @@ export default function Home() {
 
           </div>
         </div>
+        {/* --- SECCIÓN GARANTÍA --- */}
+          <div className="mt-16 max-w-3xl mx-auto text-center">
+            <div className="bg-gradient-to-r from-green-900/20 to-emerald-900/20 border border-green-500/30 p-8 rounded-2xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-4 opacity-10">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-24 h-24 text-green-500">
+                  <path fillRule="evenodd" d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 12c0 5.097 2.974 9.53 7.262 11.555a.75.75 0 00.976 0C14.776 21.53 17.75 17.097 17.75 12a12.74 12.74 0 00-.635-6.235.75.75 0 00-.722-.515 11.209 11.209 0 01-7.877-3.08zM12 13.25a.75.75 0 000-1.5A2.25 2.25 0 009.75 9.5a.75.75 0 000 1.5 2.25 2.25 0 002.25 2.25z" clipRule="evenodd" />
+                </svg>
+              </div>
+              
+              <h3 className="text-2xl font-bold text-white mb-2 flex items-center justify-center gap-2">
+                <span className="text-green-500">🛡️</span> Garantía de Tranquilidad
+              </h3>
+              <p className="text-gray-300 mb-4">
+                Sabemos que funciona. Por eso asumimos el riesgo nosotros.
+              </p>
+              <p className="text-lg font-medium text-white">
+                Si durante los primeros 30 días el sistema no cumple tus expectativas, <span className="text-green-400 border-b border-green-400">te devolvemos el 100% de la cuota mensual</span>. Sin letra pequeña.
+              </p>
+            </div>
+          </div>
       </section>
 
       {/* FOOTER */}
