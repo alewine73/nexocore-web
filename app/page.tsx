@@ -275,9 +275,13 @@ export default function Home() {
         <div className="mt-4 flex justify-center gap-6">
           <p>Valladolid, España 🇪🇸</p>
           <span>|</span>
-          {/* AQUÍ ESTÁ EL ENLACE A LA PÁGINA LEGAL */}
           <a href="/legal" className="text-gray-400 hover:text-white underline decoration-gray-700 underline-offset-4 transition-colors">
             Política de Privacidad y Aviso Legal
           </a>
         </div>
       </footer>
+
+      {/* CIERRES FINALES */}
+    </div>
+  );
+}
