@@ -59,7 +59,7 @@ export default function LegalPage() {
 
             <h3 className="text-xl text-white font-semibold mt-6">Tus Derechos</h3>
             <p>
-              Puedes ejercer tus derechos de acceso, rectificación, cancelación u oposición enviando un email a contacto@nexocore.es.
+              Puedes ejercer tus derechos de acceso, rectificación, cancelación u oposición enviando un email a jssbusinessnow@gmail.com
             </p>
           </div>
         </section>
