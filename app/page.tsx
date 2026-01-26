@@ -208,10 +208,11 @@ export default function Home() {
                 <div className="text-xs text-purple-300 font-bold">+ 500€ Setup único</div>
               </div>
               <p className="text-sm text-gray-300 mb-6 border-b border-white/10 pb-6">
-                Tu recepcionista inteligente. Atiende llamadas y agenda citas solo.
+                IA entrenada a medida con los datos de tu negocio. Responde y gestiona la agenda exactamente como tú quieres.
+
               </p>
               <ul className="space-y-3 mb-8 flex-1">
-                {['Atención telefónica 24/7', 'Voz Humana (ElevenLabs)', 'Gestión de Agenda/Reservas', 'Desvío de llamadas urgentes'].map(feat => (
+                {['Atención telefónica 24/7', 'Voz Humana Ultrarealista', 'Gestión de Agenda/Reservas', 'Desvío de llamadas urgentes'].map(feat => (
                   <li key={feat} className="flex items-center gap-2 text-sm text-white">
                     <Phone size={16} className="text-purple-400" /> {feat}
                   </li>
