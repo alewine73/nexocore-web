@@ -1,79 +1,98 @@
 import Link from "next/link";
-import { Bot, BarChart3, Zap, BrainCircuit, ChevronRight, CheckCircle2, Phone } from "lucide-react";
+import { Bot, BarChart3, Zap, BrainCircuit, ChevronRight, CheckCircle2, Phone, TrendingUp } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "NexoCore | Agencia de Automatización IA",
+  description: "Automatiza tu negocio con Inteligencia Artificial. Recepcionistas virtuales, gestión de reservas y soluciones tecnológicas en Valladolid.",
+  icons: {
+    icon: '/favicon.ico',
+  },
+};
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-gray-300 font-sans selection:bg-yellow-500/30">
       
       {/* --- NAVBAR --- */}
-      <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/5">
+      <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-xl border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="text-2xl font-bold tracking-tighter text-white">
+          <div className="text-2xl font-bold tracking-tighter text-white cursor-default">
             NEXO<span className="text-yellow-500">CORE</span>
           </div>
           <a 
-            href="mailto:jssbusinessnow@gmail.com" 
-            className="hidden md:flex bg-white text-black px-6 py-2 rounded-full font-bold hover:bg-yellow-400 transition-colors duration-300"
+            href="#contacto" 
+            className="hidden md:flex bg-white text-black px-6 py-2 rounded-full font-bold hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-[0_0_15px_rgba(255,255,255,0.2)]"
           >
             Agendar Auditoría
           </a>
         </div>
       </nav>
 
-      {/* --- HERO SECTION (LA ENTRADA TRIUNFAL) --- */}
+      {/* --- HERO SECTION --- */}
       <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 overflow-hidden">
         {/* Efecto de luz dorada de fondo */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-yellow-600/20 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-yellow-600/10 blur-[120px] rounded-full pointer-events-none" />
         
         <div className="max-w-5xl mx-auto text-center relative z-10">
-          <div className="inline-block mb-6 px-4 py-1.5 rounded-full border border-yellow-500/30 bg-yellow-500/10 text-yellow-400 text-sm font-medium tracking-wide">
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full border border-yellow-500/30 bg-yellow-500/10 text-yellow-400 text-sm font-medium tracking-wide">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow-500"></span>
+            </span>
             AGENCIA DE INTELIGENCIA ARTIFICIAL & MARKETING
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 tracking-tight leading-tight">
-            Escalamos tu Negocio mediante <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-400 to-amber-600">
-              Ecosistemas de IA
+            Convertimos la Tecnología en <br className="hidden md:block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-500 to-amber-600 drop-shadow-sm">
+              Resultados de Oro
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Deje de operar como una empresa del pasado. Implementamos infraestructuras digitales que automatizan la captación, gestión y retención de clientes.
+            Deje de operar como una empresa del pasado. Implementamos ecosistemas digitales que automatizan la captación, gestión y retención de clientes.
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <a href="mailto:jssbusinessnow@gmail.com" className="px-8 py-4 bg-yellow-500 text-black font-bold rounded-full text-lg hover:bg-yellow-400 transition-all shadow-[0_0_20px_rgba(234,179,8,0.3)] flex items-center justify-center gap-2">
-              Solicitar Consultoría Privada <ChevronRight size={20} />
+            <a href="#contacto" className="px-8 py-4 bg-yellow-500 text-black font-bold rounded-full text-lg hover:bg-yellow-400 transition-all shadow-[0_0_20px_rgba(234,179,8,0.3)] flex items-center justify-center gap-2">
+              Solicitar Consultoría <ChevronRight size={20} />
             </a>
-            <a href="#servicios" className="px-8 py-4 bg-transparent border border-white/20 text-white font-medium rounded-full text-lg hover:bg-white/10 transition-all">
-              Ver Soluciones
+            <a href="#demo" className="px-8 py-4 bg-transparent border border-white/20 text-white font-medium rounded-full text-lg hover:bg-white/10 transition-all">
+              Escuchar Demo
             </a>
           </div>
         </div>
       </section>
 
-      {/* --- SECCIÓN DEMO AUDIO (Rediseñada Gold) --- */}
-      <section className="py-20 border-y border-white/5 bg-zinc-950/50">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h3 className="text-2xl font-bold text-white mb-2">La Tecnología en Acción</h3>
-          <p className="text-gray-400 mb-8">Escucha cómo nuestra IA gestiona una situación real de negocio.</p>
-          
-          <div className="bg-black border border-gray-800 p-8 rounded-2xl shadow-2xl relative overflow-hidden group hover:border-yellow-500/30 transition-all duration-500">
-             <div className="flex items-center gap-5 mb-6">
-                <div className="h-12 w-12 rounded-full bg-yellow-500/10 flex items-center justify-center border border-yellow-500/20 text-yellow-500">
+      {/* --- SECCIÓN DEMO AUDIO PREMIUM --- */}
+      <section id="demo" className="w-full py-24 bg-zinc-950 flex justify-center items-center relative overflow-hidden border-y border-white/5">
+        <div className="max-w-4xl w-full px-4 text-center relative z-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">
+            La Tecnología en Acción
+          </h2>
+          <p className="text-gray-400 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
+            Así suena nuestro recepcionista virtual "José" cerrando una reserva real sin intervención humana.
+          </p>
+
+          <div className="bg-[#0a0a0a] border border-gray-800 rounded-3xl p-8 max-w-lg mx-auto shadow-2xl relative overflow-hidden group hover:border-yellow-500/30 transition-all duration-500">
+            <div className="flex flex-col gap-6">
+              <div className="flex items-center gap-5">
+                <div className="relative h-14 w-14 rounded-full bg-yellow-900/10 flex items-center justify-center border border-yellow-500/20 text-yellow-500">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-500 opacity-10"></span>
                   <Phone size={24} />
                 </div>
                 <div className="text-left">
-                  <p className="text-xs text-yellow-500 uppercase tracking-widest font-bold">Nexo Voice</p>
-                  <h4 className="text-white font-bold text-lg">Recepcionista Inteligente</h4>
+                  <p className="text-xs text-yellow-500 uppercase tracking-wider font-bold mb-1 animate-pulse">● Grabación en directo</p>
+                  <h3 className="text-white font-bold text-xl">Gestión de Reserva</h3>
                 </div>
-             </div>
-             
-             {/* Player con filtro dorado */}
-             <audio controls className="w-full h-12 rounded-lg opacity-90 hover:opacity-100 transition-opacity" style={{ filter: "invert(1) hue-rotate(180deg) sepia(1) saturate(5) hue-rotate(-50deg)" }}>
+              </div>
+
+              <audio controls className="w-full h-12 rounded-lg opacity-90 hover:opacity-100 transition-opacity" style={{ filter: "invert(1) hue-rotate(180deg) sepia(1) saturate(3) hue-rotate(-50deg)" }}>
                 <source src="/demo.mp3" type="audio/mpeg" />
-                Tu navegador no soporta audio.
-             </audio>
+                Tu navegador no soporta el elemento de audio.
+              </audio>
+            </div>
           </div>
         </div>
       </section>
@@ -86,88 +105,150 @@ export default function Home() {
               Más allá de la automatización. <br />
               <span className="text-yellow-500">Ingeniería de Negocio.</span>
             </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-400 max-w-2xl mx-auto text-lg">
               No vendemos parches. Diseñamos e integramos la infraestructura completa que tu empresa necesita para liderar su sector.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Servicio 1 */}
-            <div className="bg-zinc-900/40 border border-white/5 p-8 rounded-2xl hover:bg-zinc-900/60 transition-colors group">
-              <div className="h-14 w-14 bg-blue-900/20 text-blue-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <div className="bg-zinc-900/40 border border-white/5 p-8 rounded-2xl hover:bg-zinc-900/80 hover:border-yellow-500/20 transition-all duration-300 group">
+              <div className="h-14 w-14 bg-yellow-500/10 text-yellow-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Bot size={32} />
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Agentes de Voz Neuronales</h3>
               <p className="text-gray-400 leading-relaxed mb-6">
-                Sistemas de IA capaces de mantener conversaciones fluidas, gestionar agendas y cualificar leads 24/7. Eliminamos el error humano y la pérdida de oportunidades por líneas ocupadas.
+                Sistemas de IA capaces de mantener conversaciones fluidas, gestionar agendas y cualificar leads 24/7. Eliminamos el error humano y la pérdida de oportunidades.
               </p>
-              <ul className="space-y-2 text-sm text-gray-500">
-                <li className="flex gap-2"><CheckCircle2 size={16} className="text-yellow-500" /> Atención inmediata sin esperas</li>
-                <li className="flex gap-2"><CheckCircle2 size={16} className="text-yellow-500" /> Integración con CRM en tiempo real</li>
-              </ul>
             </div>
 
             {/* Servicio 2 */}
-            <div className="bg-zinc-900/40 border border-white/5 p-8 rounded-2xl hover:bg-zinc-900/60 transition-colors group">
-              <div className="h-14 w-14 bg-purple-900/20 text-purple-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <div className="bg-zinc-900/40 border border-white/5 p-8 rounded-2xl hover:bg-zinc-900/80 hover:border-yellow-500/20 transition-all duration-300 group">
+              <div className="h-14 w-14 bg-yellow-500/10 text-yellow-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <BrainCircuit size={32} />
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Automatización de Procesos</h3>
               <p className="text-gray-400 leading-relaxed mb-6">
                 Conectamos todas las áreas de su negocio. Automatizamos tareas repetitivas mediante sistemas profundos para que usted deje de ser un operario y pase a ser un dueño de negocio.
               </p>
-              <ul className="space-y-2 text-sm text-gray-500">
-                <li className="flex gap-2"><CheckCircle2 size={16} className="text-yellow-500" /> Facturación y logística autónoma</li>
-                <li className="flex gap-2"><CheckCircle2 size={16} className="text-yellow-500" /> Reducción de costes operativos</li>
-              </ul>
             </div>
 
             {/* Servicio 3 */}
-            <div className="bg-zinc-900/40 border border-white/5 p-8 rounded-2xl hover:bg-zinc-900/60 transition-colors group">
-              <div className="h-14 w-14 bg-green-900/20 text-green-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <BarChart3 size={32} />
+            <div className="bg-zinc-900/40 border border-white/5 p-8 rounded-2xl hover:bg-zinc-900/80 hover:border-yellow-500/20 transition-all duration-300 group">
+              <div className="h-14 w-14 bg-yellow-500/10 text-yellow-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <TrendingUp size={32} />
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Growth & Marketing IA</h3>
               <p className="text-gray-400 leading-relaxed mb-6">
                 No solo ahorramos tiempo, generamos dinero. Implementamos sistemas de reactivación de clientes y captación de leads mediante estrategias de datos avanzadas.
               </p>
-              <ul className="space-y-2 text-sm text-gray-500">
-                <li className="flex gap-2"><CheckCircle2 size={16} className="text-yellow-500" /> Embudos de venta automatizados</li>
-                <li className="flex gap-2"><CheckCircle2 size={16} className="text-yellow-500" /> Reputación online (Google Reviews)</li>
-              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* --- CTA FINAL (HIGH TICKET) --- */}
-      <section className="py-24 px-6 relative overflow-hidden">
-        {/* Fondo degradado dorado sutil */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-yellow-900/5 to-black pointer-events-none" />
-        
-        <div className="max-w-4xl mx-auto text-center relative z-10 border border-white/10 bg-black/50 backdrop-blur-sm p-12 rounded-3xl">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            ¿Está su empresa lista para el siguiente nivel?
+      {/* --- SECCIÓN FILOSOFÍA (LA FRASE DEL ÉXITO) --- */}
+      <section className="py-24 px-6 bg-gradient-to-b from-black to-zinc-900 border-t border-white/5 text-center">
+        <div className="max-w-4xl mx-auto">
+          <Zap className="w-12 h-12 text-yellow-500 mx-auto mb-6 animate-pulse" />
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
+            "La clave del éxito es la capacidad de <br />
+            <span className="text-yellow-500">adaptarse a los cambios</span>."
           </h2>
-          <p className="text-xl text-gray-400 mb-10">
-            Trabajamos con un número limitado de clientes para garantizar la máxima calidad en la implementación. Reserve una sesión de consultoría para analizar su caso.
+          <p className="text-xl text-gray-400 font-light italic">
+            El mercado no espera. Contrata nuestros servicios, no lo dudes.
           </p>
-          <a 
-            href="mailto:jssbusinessnow@gmail.com" 
-            className="inline-flex px-10 py-5 bg-white text-black font-bold rounded-full text-xl hover:bg-yellow-400 transition-all transform hover:-translate-y-1 shadow-lg"
-          >
-            Contactar con el Equipo
-          </a>
-          <p className="mt-6 text-sm text-gray-600">
-            Respuesta en menos de 24 horas. Estudio de viabilidad gratuito.
-          </p>
+        </div>
+      </section>
+
+      {/* --- SECCIÓN CONTACTO PREMIUM (FORMULARIO) --- */}
+      <section id="contacto" className="py-24 px-6 relative overflow-hidden bg-black border-t border-white/5">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          
+          {/* COLUMNA IZQUIERDA: TEXTO Y DATOS */}
+          <div className="space-y-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
+              ¿Hablamos de Negocios?
+            </h2>
+            <p className="text-2xl text-yellow-500 font-medium">
+              "Hacemos que tu negocio valga oro."
+            </p>
+            <p className="text-gray-400 text-lg leading-relaxed">
+              No buscamos clientes, buscamos socios estratégicos. Si estás listo para automatizar tu empresa y escalar tu facturación, rellena el formulario y analizaremos tu caso en 24h.
+            </p>
+            
+            <div className="pt-8 space-y-6">
+              <div className="flex items-center gap-4 text-gray-300 group">
+                <div className="h-12 w-12 rounded-full bg-zinc-900 flex items-center justify-center border border-white/10 text-yellow-500 group-hover:border-yellow-500 transition-colors">
+                  📧
+                </div>
+                <div>
+                  <p className="text-xs text-gray-500 uppercase font-bold">Email Directo</p>
+                  <a href="mailto:jssbusinessnow@gmail.com" className="text-lg hover:text-yellow-400 transition-colors">jssbusinessnow@gmail.com</a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4 text-gray-300 group">
+                <div className="h-12 w-12 rounded-full bg-zinc-900 flex items-center justify-center border border-white/10 text-yellow-500 group-hover:border-yellow-500 transition-colors">
+                  📞
+                </div>
+                <div>
+                  <p className="text-xs text-gray-500 uppercase font-bold">Teléfono / WhatsApp</p>
+                  <a href="tel:+34644025037" className="text-lg hover:text-yellow-400 transition-colors">644 02 50 37</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* COLUMNA DERECHA: FORMULARIO */}
+          <div className="bg-[#0a0a0a] border border-gray-800 p-8 rounded-3xl shadow-2xl relative">
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-yellow-600/10 blur-[60px] rounded-full pointer-events-none"></div>
+
+            <form className="space-y-5 relative z-10">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <label className="text-sm text-gray-400 font-medium ml-1">Nombre</label>
+                  <input type="text" placeholder="Tu nombre" className="w-full bg-zinc-900/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-900 transition-all" />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-sm text-gray-400 font-medium ml-1">Empresa</label>
+                  <input type="text" placeholder="Nombre negocio" className="w-full bg-zinc-900/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-900 transition-all" />
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <label className="text-sm text-gray-400 font-medium ml-1">Email</label>
+                <input type="email" placeholder="tu@email.com" className="w-full bg-zinc-900/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-900 transition-all" />
+              </div>
+
+              <div className="space-y-2">
+                <label className="text-sm text-gray-400 font-medium ml-1">Teléfono</label>
+                <input type="tel" placeholder="+34 600 000 000" className="w-full bg-zinc-900/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-900 transition-all" />
+              </div>
+
+              <div className="space-y-2">
+                <label className="text-sm text-gray-400 font-medium ml-1">¿Qué necesitas?</label>
+                <textarea rows={4} placeholder="Cuéntanos brevemente tu caso..." className="w-full bg-zinc-900/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-900 transition-all resize-none"></textarea>
+              </div>
+
+              <div className="pt-2">
+                <button type="button" className="w-full bg-yellow-500 text-black font-bold py-4 rounded-xl hover:bg-yellow-400 transition-all transform hover:scale-[1.02] shadow-[0_0_15px_rgba(234,179,8,0.4)]">
+                  ENVIAR SOLICITUD
+                </button>
+                <p className="text-center text-xs text-gray-600 mt-4">
+                  Al enviar aceptas nuestra <Link href="/legal" className="underline hover:text-gray-400">política de privacidad</Link>.
+                </p>
+              </div>
+            </form>
+          </div>
+
         </div>
       </section>
 
       {/* --- FOOTER LEGAL --- */}
       <footer className="border-t border-white/10 py-12 bg-black text-center text-gray-600 text-sm">
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
-           <span className="font-bold text-gray-400">NEXOCORE</span>
+           <span className="font-bold text-gray-400 tracking-wider">NEXOCORE</span>
            <span className="hidden md:block text-gray-800">|</span>
            <span>Valladolid, España 🇪🇸</span>
         </div>
