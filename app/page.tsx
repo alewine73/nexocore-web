@@ -97,8 +97,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- SERVICIOS --- */}
-      <section id="servicios" className="py-32 px-6">
+      {/* --- SERVICIOS (VALUE STACK) --- */}
+      <section id="servicios" className="py-32 px-6 bg-zinc-950">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
@@ -111,6 +111,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
+            {/* Servicio 1 */}
             <div className="bg-zinc-900/40 border border-white/5 p-8 rounded-2xl hover:bg-zinc-900/80 hover:border-yellow-500/20 transition-all duration-300 group">
               <div className="h-14 w-14 bg-yellow-500/10 text-yellow-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Bot size={32} />
@@ -121,16 +122,18 @@ export default function Home() {
               </p>
             </div>
 
+            {/* Servicio 2 */}
             <div className="bg-zinc-900/40 border border-white/5 p-8 rounded-2xl hover:bg-zinc-900/80 hover:border-yellow-500/20 transition-all duration-300 group">
               <div className="h-14 w-14 bg-yellow-500/10 text-yellow-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <BrainCircuit size={32} />
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Automatización de Procesos</h3>
               <p className="text-gray-400 leading-relaxed mb-6">
-                Conectamos todas las áreas de su negocio. Automatizamos tareas repetitivas mediante sistemas profundos para que usted deje de ser un operario y pase a ser un dueño de negocio.
+                Conectamos todas las áreas de su negocio. Automatizamos tareas repetitivas mediante sistemas profundos para que usted se centre en hacer crecer su empresa y liderar su sector.
               </p>
             </div>
 
+            {/* Servicio 3 */}
             <div className="bg-zinc-900/40 border border-white/5 p-8 rounded-2xl hover:bg-zinc-900/80 hover:border-yellow-500/20 transition-all duration-300 group">
               <div className="h-14 w-14 bg-yellow-500/10 text-yellow-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <TrendingUp size={32} />
@@ -142,27 +145,6 @@ export default function Home() {
             </div>
           </div>
           
-          {/* SECCIÓN GARANTÍA */}
-          <div className="mt-16 max-w-3xl mx-auto text-center">
-            <div className="bg-gradient-to-r from-green-900/20 to-emerald-900/20 border border-green-500/30 p-8 rounded-2xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 p-4 opacity-10">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-24 h-24 text-green-500">
-                  <path fillRule="evenodd" d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 12c0 5.097 2.974 9.53 7.262 11.555a.75.75 0 00.976 0C14.776 21.53 17.75 17.097 17.75 12a12.74 12.74 0 00-.635-6.235.75.75 0 00-.722-.515 11.209 11.209 0 01-7.877-3.08zM12 13.25a.75.75 0 000-1.5A2.25 2.25 0 009.75 9.5a.75.75 0 000 1.5 2.25 2.25 0 002.25 2.25z" clipRule="evenodd" />
-                </svg>
-              </div>
-              
-              <h3 className="text-2xl font-bold text-white mb-2 flex items-center justify-center gap-2">
-                <span className="text-green-500">🛡️</span> Garantía de Tranquilidad
-              </h3>
-              <p className="text-gray-300 mb-4">
-                Sabemos que funciona. Por eso asumimos el riesgo nosotros.
-              </p>
-              <p className="text-lg font-medium text-white">
-                Si durante los primeros 30 días el sistema no cumple tus expectativas, <span className="text-green-400 border-b border-green-400">te devolvemos el 100% de la cuota mensual</span>. Sin letra pequeña.
-              </p>
-            </div>
-          </div>
-
         </div>
       </section>
 
