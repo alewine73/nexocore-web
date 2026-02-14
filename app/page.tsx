@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Bot, BarChart3, Zap, BrainCircuit, ChevronRight, CheckCircle2, Phone, TrendingUp } from "lucide-react";
+import { Bot, BarChart3, BrainCircuit, ChevronRight, CheckCircle2, Phone, TrendingUp } from "lucide-react";
+import ContactForm from "../components/ContactForm"; // Importamos el formulario nuevo
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -31,7 +32,6 @@ export default function Home() {
 
       {/* --- HERO SECTION --- */}
       <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 overflow-hidden">
-        {/* Efecto de luz dorada de fondo */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-yellow-600/10 blur-[120px] rounded-full pointer-events-none" />
         
         <div className="max-w-5xl mx-auto text-center relative z-10">
@@ -97,7 +97,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- SERVICIOS (VALUE STACK) --- */}
+      {/* --- SERVICIOS --- */}
       <section id="servicios" className="py-32 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
@@ -111,7 +111,6 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Servicio 1 */}
             <div className="bg-zinc-900/40 border border-white/5 p-8 rounded-2xl hover:bg-zinc-900/80 hover:border-yellow-500/20 transition-all duration-300 group">
               <div className="h-14 w-14 bg-yellow-500/10 text-yellow-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Bot size={32} />
@@ -122,7 +121,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Servicio 2 */}
             <div className="bg-zinc-900/40 border border-white/5 p-8 rounded-2xl hover:bg-zinc-900/80 hover:border-yellow-500/20 transition-all duration-300 group">
               <div className="h-14 w-14 bg-yellow-500/10 text-yellow-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <BrainCircuit size={32} />
@@ -133,7 +131,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Servicio 3 */}
             <div className="bg-zinc-900/40 border border-white/5 p-8 rounded-2xl hover:bg-zinc-900/80 hover:border-yellow-500/20 transition-all duration-300 group">
               <div className="h-14 w-14 bg-yellow-500/10 text-yellow-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <TrendingUp size={32} />
@@ -144,28 +141,35 @@ export default function Home() {
               </p>
             </div>
           </div>
+          
+          {/* SECCIÓN GARANTÍA */}
+          <div className="mt-16 max-w-3xl mx-auto text-center">
+            <div className="bg-gradient-to-r from-green-900/20 to-emerald-900/20 border border-green-500/30 p-8 rounded-2xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-4 opacity-10">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-24 h-24 text-green-500">
+                  <path fillRule="evenodd" d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 12c0 5.097 2.974 9.53 7.262 11.555a.75.75 0 00.976 0C14.776 21.53 17.75 17.097 17.75 12a12.74 12.74 0 00-.635-6.235.75.75 0 00-.722-.515 11.209 11.209 0 01-7.877-3.08zM12 13.25a.75.75 0 000-1.5A2.25 2.25 0 009.75 9.5a.75.75 0 000 1.5 2.25 2.25 0 002.25 2.25z" clipRule="evenodd" />
+                </svg>
+              </div>
+              
+              <h3 className="text-2xl font-bold text-white mb-2 flex items-center justify-center gap-2">
+                <span className="text-green-500">🛡️</span> Garantía de Tranquilidad
+              </h3>
+              <p className="text-gray-300 mb-4">
+                Sabemos que funciona. Por eso asumimos el riesgo nosotros.
+              </p>
+              <p className="text-lg font-medium text-white">
+                Si durante los primeros 30 días el sistema no cumple tus expectativas, <span className="text-green-400 border-b border-green-400">te devolvemos el 100% de la cuota mensual</span>. Sin letra pequeña.
+              </p>
+            </div>
+          </div>
+
         </div>
       </section>
 
-      {/* --- SECCIÓN FILOSOFÍA (LA FRASE DEL ÉXITO) --- */}
-      <section className="py-24 px-6 bg-gradient-to-b from-black to-zinc-900 border-t border-white/5 text-center">
-        <div className="max-w-4xl mx-auto">
-          <Zap className="w-12 h-12 text-yellow-500 mx-auto mb-6 animate-pulse" />
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
-            "La clave del éxito es la capacidad de <br />
-            <span className="text-yellow-500">adaptarse a los cambios</span>."
-          </h2>
-          <p className="text-xl text-gray-400 font-light italic">
-            El mercado no espera. Contrata nuestros servicios, no lo dudes.
-          </p>
-        </div>
-      </section>
-
-      {/* --- SECCIÓN CONTACTO PREMIUM (FORMULARIO) --- */}
+      {/* --- SECCIÓN CONTACTO PREMIUM (FORMULARIO CONECTADO) --- */}
       <section id="contacto" className="py-24 px-6 relative overflow-hidden bg-black border-t border-white/5">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           
-          {/* COLUMNA IZQUIERDA: TEXTO Y DATOS */}
           <div className="space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
               ¿Hablamos de Negocios?
@@ -200,47 +204,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* COLUMNA DERECHA: FORMULARIO */}
-          <div className="bg-[#0a0a0a] border border-gray-800 p-8 rounded-3xl shadow-2xl relative">
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-yellow-600/10 blur-[60px] rounded-full pointer-events-none"></div>
-
-            <form className="space-y-5 relative z-10">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <label className="text-sm text-gray-400 font-medium ml-1">Nombre</label>
-                  <input type="text" placeholder="Tu nombre" className="w-full bg-zinc-900/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-900 transition-all" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm text-gray-400 font-medium ml-1">Empresa</label>
-                  <input type="text" placeholder="Nombre negocio" className="w-full bg-zinc-900/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-900 transition-all" />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm text-gray-400 font-medium ml-1">Email</label>
-                <input type="email" placeholder="tu@email.com" className="w-full bg-zinc-900/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-900 transition-all" />
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm text-gray-400 font-medium ml-1">Teléfono</label>
-                <input type="tel" placeholder="+34 600 000 000" className="w-full bg-zinc-900/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-900 transition-all" />
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm text-gray-400 font-medium ml-1">¿Qué necesitas?</label>
-                <textarea rows={4} placeholder="Cuéntanos brevemente tu caso..." className="w-full bg-zinc-900/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-900 transition-all resize-none"></textarea>
-              </div>
-
-              <div className="pt-2">
-                <button type="button" className="w-full bg-yellow-500 text-black font-bold py-4 rounded-xl hover:bg-yellow-400 transition-all transform hover:scale-[1.02] shadow-[0_0_15px_rgba(234,179,8,0.4)]">
-                  ENVIAR SOLICITUD
-                </button>
-                <p className="text-center text-xs text-gray-600 mt-4">
-                  Al enviar aceptas nuestra <Link href="/legal" className="underline hover:text-gray-400">política de privacidad</Link>.
-                </p>
-              </div>
-            </form>
-          </div>
+          {/* AQUÍ CARGAMOS EL COMPONENTE NUEVO DEL FORMULARIO */}
+          <ContactForm />
 
         </div>
       </section>
