@@ -49,7 +49,7 @@ export default function Home() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow-500"></span>
             </span>
-            CONSULTORÍA DE ESTRATEGIA & IA
+            AGENCIA DE INTELIGENCIA ARTIFICIAL Y MARKETING
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 tracking-tight leading-tight">
