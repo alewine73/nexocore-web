@@ -6,9 +6,11 @@ import {
   Star, 
   Megaphone, 
   Filter, 
-  Users, 
   MessageSquare,
-  Lock
+  Users,
+  MessageCircle, // Para WhatsApp
+  FileText,      // Para Facturas
+  Video          // Para Redes
 } from "lucide-react";
 
 export default function ServiciosPage() {
@@ -42,98 +44,126 @@ export default function ServiciosPage() {
           Hacemos que tu negocio <span className="text-yellow-500">valga oro</span>.
         </h1>
         <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-          Soluciones de alto impacto. Sin rodeos.
+          No somos una agencia de servicios sueltos. Somos ingenieros de negocio.
+          Implementamos ecosistemas completos para que tú solo tengas que preocuparte de liderar.
         </p>
       </section>
 
       {/* --- LISTA DE SERVICIOS --- */}
       <section className="pb-24 px-6 max-w-7xl mx-auto space-y-16">
         
-        {/* 1. CONSULTORÍA (DESTACADA) */}
+        {/* 1. CONSULTORÍA (EL PUNTO DE PARTIDA) */}
         <div className="bg-gradient-to-r from-yellow-900/10 to-black border border-yellow-500/50 p-8 md:p-12 rounded-3xl relative overflow-hidden">
-          <div className="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-4 py-2 rounded-bl-xl z-10">RECOMENDADO</div>
+          {/* Quitada la etiqueta de Recomendado, ahora es el Core */}
           <div className="flex flex-col md:flex-row items-center gap-8 relative z-10">
             <div className="h-20 w-20 bg-yellow-500/20 text-yellow-500 rounded-full flex items-center justify-center shrink-0 shadow-[0_0_30px_rgba(234,179,8,0.2)]">
               <Star size={40} />
             </div>
             <div className="text-center md:text-left">
-              <h2 className="text-3xl font-bold text-white mb-4">Consultoría Empresarial</h2>
+              <h2 className="text-3xl font-bold text-white mb-4">Consultoría Empresarial 360º</h2>
               <p className="text-gray-300 leading-relaxed max-w-2xl text-lg">
-                Las evaluaciones de viabilidad de NexoCore ofrecen un análisis riguroso de los proyectos de IA propuestos.
-                Garantizamos su viabilidad práctica y calculamos un posible retorno de la inversión antes de que gastes un euro. Si no es rentable, no lo hacemos.
+                Este es el primer paso. Realizamos una auditoría profunda para ver las necesidades reales de tu negocio. 
+                No instalamos cosas por instalar: analizamos dónde pierdes tiempo y dinero, y te proponemos la solución exacta. 
+                <span className="text-yellow-500 font-semibold block mt-2">Una vez trazado el plan, nosotros nos encargamos de instalar todos los servicios que necesites.</span>
               </p>
             </div>
           </div>
         </div>
 
-        {/* 2. LOS 3 CUADRADOS DE LA IMAGEN (TEXTO EXACTO) + NUEVOS */}
+        {/* 2. GRID DE SOLUCIONES (Ejemplos Reales) */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            {/* Agentes de Voz Neuronales (TEXTO ORIGINAL DE TU FOTO) */}
+            {/* Servicio: VOZ (Reservas) */}
             <div className="bg-[#0a0a0a] border border-white/10 p-8 rounded-2xl hover:border-yellow-500/30 transition-all duration-300">
-              <div className="h-12 w-12 bg-yellow-500/10 text-yellow-500 rounded-lg flex items-center justify-center mb-6">
+              <div className="h-12 w-12 bg-blue-900/20 text-blue-400 rounded-lg flex items-center justify-center mb-6">
                 <Bot size={24} />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Agentes de Voz Neuronales</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Sistemas de IA capaces de mantener conversaciones fluidas, gestionar agendas y cualificar leads 24/7. Eliminamos el error humano y la pérdida de oportunidades.
+              <h3 className="text-xl font-bold text-white mb-3">Agente de Voz (Reservas)</h3>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                Tu teléfono atendido por IA con voz humana. No solo responde, ejecuta acciones en tiempo real:
               </p>
+              <ul className="text-xs text-gray-500 space-y-2 list-disc pl-4">
+                <li>Gestiona reservas (Añadir, Editar, Cancelar).</li>
+                <li>Sincronización directa con tu calendario.</li>
+                <li>Atención 24/7 sin esperas.</li>
+              </ul>
             </div>
 
-            {/* Automatización de Procesos (TEXTO ORIGINAL DE TU FOTO) */}
+            {/* Servicio: WHATSAPP (RAG) */}
             <div className="bg-[#0a0a0a] border border-white/10 p-8 rounded-2xl hover:border-yellow-500/30 transition-all duration-300">
-              <div className="h-12 w-12 bg-yellow-500/10 text-yellow-500 rounded-lg flex items-center justify-center mb-6">
-                <BrainCircuit size={24} />
+              <div className="h-12 w-12 bg-green-900/20 text-green-400 rounded-lg flex items-center justify-center mb-6">
+                <MessageCircle size={24} />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Automatización de Procesos</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Conectamos todas las áreas de su negocio. Automatizamos tareas repetitivas mediante sistemas profundos para que usted se centre en hacer crecer su empresa y liderar su sector.
+              <h3 className="text-xl font-bold text-white mb-3">Chatbot WhatsApp RAG</h3>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                Un cerebro que conoce tu negocio mejor que nadie. Entrenado con tus datos (RAG) para responder a todo.
               </p>
+              <ul className="text-xs text-gray-500 space-y-2 list-disc pl-4">
+                <li>Responde dudas complejas al instante.</li>
+                <li>Envío de plantillas a clientes potenciales (Leads).</li>
+                <li>Cualificación automática de clientes.</li>
+              </ul>
             </div>
 
-            {/* Growth & Marketing IA (TEXTO ORIGINAL DE TU FOTO) */}
+            {/* Servicio: GESTIÓN INTERNA (Facturas) */}
             <div className="bg-[#0a0a0a] border border-white/10 p-8 rounded-2xl hover:border-yellow-500/30 transition-all duration-300">
               <div className="h-12 w-12 bg-yellow-500/10 text-yellow-500 rounded-lg flex items-center justify-center mb-6">
-                <TrendingUp size={24} />
+                <FileText size={24} />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Growth & Marketing IA</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                No solo ahorramos tiempo, generamos dinero. Implementamos sistemas de reactivación de clientes y captación de leads mediante estrategias de datos avanzadas.
+              <h3 className="text-xl font-bold text-white mb-3">Burocracia Automática</h3>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                Olvídate del papeleo. Creamos sistemas que trabajan solos en la sombra.
               </p>
+              <ul className="text-xs text-gray-500 space-y-2 list-disc pl-4">
+                <li>Generador de facturas automático.</li>
+                <li>Gestión de proveedores y stock.</li>
+                <li><strong>Automatizamos infinitas cosas</strong> según tu necesidad.</li>
+              </ul>
             </div>
 
-            {/* --- NUEVOS SERVICIOS AÑADIDOS --- */}
-
-            {/* Publicidad */}
+            {/* Servicio: REDES SOCIALES (Bot) */}
             <div className="bg-[#0a0a0a] border border-white/10 p-8 rounded-2xl hover:border-yellow-500/30 transition-all duration-300">
-              <div className="h-12 w-12 bg-yellow-500/10 text-yellow-500 rounded-lg flex items-center justify-center mb-6">
+              <div className="h-12 w-12 bg-pink-900/20 text-pink-400 rounded-lg flex items-center justify-center mb-6">
+                <Video size={24} />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Gestión Redes Sociales IA</h3>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                Mantén tus redes vivas sin perder tiempo grabando o escribiendo.
+              </p>
+              <ul className="text-xs text-gray-500 space-y-2 list-disc pl-4">
+                <li>Bot que crea y sube vídeos a Instagram/TikTok.</li>
+                <li>Respuesta automática a comentarios y DMs.</li>
+                <li>Interacción con tu comunidad 24/7.</li>
+              </ul>
+            </div>
+
+            {/* Servicio: PUBLICIDAD PRO */}
+            <div className="bg-[#0a0a0a] border border-white/10 p-8 rounded-2xl hover:border-yellow-500/30 transition-all duration-300">
+              <div className="h-12 w-12 bg-red-900/20 text-red-400 rounded-lg flex items-center justify-center mb-6">
                 <Megaphone size={24} />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Publicidad Profesional</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Campañas de anuncios de nivel cine. Utilizamos IA para crear vídeos y creatividades que captan la atención al instante. Nos hacemos la nuestra propia, imagina lo que haremos por la tuya.
+                Campañas de anuncios (Ads) de nivel cinematográfico. Utilizamos IA generativa para crear vídeos y creatividades que captan la atención al instante. Nos hacemos la nuestra propia, imagina lo que haremos por la tuya.
               </p>
             </div>
 
-            {/* Funnels */}
+            {/* Servicio: FUNNELS */}
             <div className="bg-[#0a0a0a] border border-white/10 p-8 rounded-2xl hover:border-yellow-500/30 transition-all duration-300">
-              <div className="h-12 w-12 bg-yellow-500/10 text-yellow-500 rounded-lg flex items-center justify-center mb-6">
+              <div className="h-12 w-12 bg-purple-900/20 text-purple-400 rounded-lg flex items-center justify-center mb-6">
                 <Filter size={24} />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Funnels de Venta</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Diseñamos embudos de venta automatizados para convertir visitas en clientes de pago sin que tengas que intervenir.
+                Diseñamos el camino exacto que recorre tu cliente desde que te ve hasta que te paga. Embudos optimizados para maximizar la conversión y filtrar a los curiosos.
               </p>
             </div>
 
         </div>
       </section>
 
-      {/* --- SECCIÓN FAMILIA (LA DIFERENCIA) --- */}
+      {/* --- SECCIÓN FAMILIA (CTA) --- */}
       <section className="py-24 px-6 bg-zinc-950 border-t border-white/10 relative overflow-hidden">
-         {/* Fondo decorativo */}
-         <div className="absolute inset-0 bg-gradient-to-t from-yellow-900/10 to-transparent pointer-events-none"></div>
-
          <div className="max-w-4xl mx-auto text-center relative z-10">
             <Users className="w-16 h-16 text-yellow-500 mx-auto mb-6" />
             
@@ -150,10 +180,6 @@ export default function ServiciosPage() {
                   <li className="flex items-start gap-3">
                     <MessageSquare className="text-green-500 mt-1 shrink-0" size={20} />
                     <span className="text-gray-400"><strong>Chat Privado de WhatsApp:</strong> Tendrás un grupo directo con nuestros asistentes para apoyarte en todo momento.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Lock className="text-yellow-500 mt-1 shrink-0" size={20} />
-                    <span className="text-gray-400"><strong>Herramientas Exclusivas:</strong> Tendrás acceso a todo tipo de herramientas internas que usamos para escalar negocios.</span>
                   </li>
                </ul>
             </div>
