@@ -63,7 +63,7 @@ export default function ServiciosPage() {
               <h2 className="text-3xl font-bold text-white mb-4">Consultoría Empresarial 360º</h2>
               <p className="text-gray-300 leading-relaxed max-w-2xl text-lg">
                 Las evaluaciones de viabilidad de NexoCore ofrecen un análisis riguroso de los proyectos de IA propuestos.
-                Garantizamos su viabilidad práctica y calculamos un posible retorno de la inversión antes de que gastes un euro. Si no es rentable, no lo hacemos.
+                Garantizamos su viabilidad práctica y calculamos un posible retorno de la inversión antes de que gastes un euro. Si no es rentable, no lo hacemos. Desarrollaremos una estrategia unica para ti.
               </p>
             </div>
           </div>
