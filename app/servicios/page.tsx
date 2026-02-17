@@ -77,9 +77,9 @@ export default function ServiciosPage() {
               <div className="h-12 w-12 bg-yellow-500/10 text-yellow-500 rounded-lg flex items-center justify-center mb-6">
                 <Bot size={24} />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Agentes de Voz Neuronales</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Chatbots y Agentes</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Sistemas de IA capaces de mantener conversaciones fluidas, gestionar agendas y cualificar leads 24/7. Eliminamos el error humano y la pérdida de oportunidades.
+                Desarrollamos agentes de inteligencia artificial capaces de tomar decisiones autónomas en cualquier departamento. Eliminamos el error humano y la pérdida de oportunidades.
               </p>
             </div>
 
