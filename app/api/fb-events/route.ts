@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
-const PIXEL_ID = "904024115582171"; 
-const ACCESS_TOKEN = "EAAmvmZB8qe40BQ29OOffj61ZByX5ZCmtFvwtd6QZAlRdy2j10Oq9ZAyfNa2uZCl2qbpSDkqId4NA7kr1rllLZA8Xk8c55BVLLzZAPqt2I2iHcVeaZBMS2uqFElhwXC5fMAdEnPTcItrUNhMJeF0a9hK0RXfA1cpK6YRseAcdMjb6axxhRRzZCfTYj1fFuS8ZCGPJQ4LSAZDZD"; // <--- ¡OJO! PEGA AQUÍ TU TOKEN
+const PIXEL_ID = process.env.PIXEL_ID!;
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN!;
 
 export async function POST(request: Request) {
   try {
