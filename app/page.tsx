@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Link from "next/link";
 import { Bot, BarChart3, BrainCircuit, ChevronRight, CheckCircle2, Users, Star, MessageSquare } from "lucide-react";
 import type { Metadata } from "next";
@@ -11,6 +12,28 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  // --- RASTREO API TOTAL (Server Side Tracking) ---
+  useEffect(() => {
+    // Esto se ejecuta nada más entrar el cliente en la web
+    const trackPageView = async () => {
+      try {
+        await fetch('/api/fb-events', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            eventName: 'PageView', // Le decimos a Facebook que han visto la página
+            eventSourceUrl: window.location.href,
+            eventId: 'pageview-' + new Date().getTime() // ID único para deduplicar
+          })
+        });
+        console.log("Evento API enviado a Facebook");
+      } catch (e) {
+        console.error("Error enviando evento API", e);
+      }
+    };
+
+    trackPageView();
+  }, []);
   return (
     <main className="min-h-screen bg-black text-gray-300 font-sans selection:bg-yellow-500/30">
       
