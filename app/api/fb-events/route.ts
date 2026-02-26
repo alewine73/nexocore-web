@@ -6,7 +6,7 @@ const ACCESS_TOKEN = process.env.ACCESS_TOKEN!;
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { eventName, eventId, eventSourceUrl, fbp, fbc } = body;
+    const { eventName, eventSourceUrl, fbp, fbc, customData } = body;
 
     // Obtener IP y User-Agent
     const clientIp =
@@ -19,7 +19,6 @@ export async function POST(request: Request) {
         {
           event_name: eventName,
           event_time: Math.floor(Date.now() / 1000),
-          event_id: eventId,
           event_source_url: eventSourceUrl,
           action_source: "website",
 
@@ -29,6 +28,8 @@ export async function POST(request: Request) {
             fbp: fbp || undefined,
             fbc: fbc || undefined,
           },
+
+          custom_data: customData || {},
         },
       ],
     };
