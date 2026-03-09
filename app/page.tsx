@@ -1,5 +1,6 @@
 import TrackPageView from "@/components/TrackPageView";
 import Link from "next/link";
+import ContactForm from "@/components/ContactForm";
 import { Bot, BarChart3, BrainCircuit, ChevronRight, CheckCircle2, Users, Star, MessageSquare } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -18,28 +19,29 @@ export default function Home() {
       
       {/* --- NAVBAR --- */}
       <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-xl border-b border-white/5">
-  <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-    
-    <Link href="/" className="text-2xl font-bold tracking-tighter text-white">
-      NEXO<span className="text-yellow-500">CORE</span>
-    </Link>
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+          
+          <Link href="/" className="text-2xl font-bold tracking-tighter text-white">
+            NEXO<span className="text-yellow-500">CORE</span>
+          </Link>
 
-    <div className="hidden md:flex items-center gap-8">
-      <Link href="/servicios" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
-        Nuestros Servicios
-      </Link>
+          <div className="hidden md:flex items-center gap-8">
+            <Link href="/servicios" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
+              Nuestros Servicios
+            </Link>
 
-      <Link href="/familia" className="text-sm font-bold text-yellow-500 hover:text-yellow-400 transition-colors flex items-center gap-2">
-        <Star size={16} /> Familia Dorada
-      </Link>
+            <Link href="/familia" className="text-sm font-bold text-yellow-500 hover:text-yellow-400 transition-colors flex items-center gap-2">
+              <Star size={16} /> Familia Dorada
+            </Link>
 
-      <a href="#contacto" className="bg-white text-black px-6 py-2 rounded-full font-bold hover:bg-yellow-500 transition-colors">
-        Agendar Auditoría
-      </a>
-    </div>
+            <a href="#contacto" className="bg-white text-black px-6 py-2 rounded-full font-bold hover:bg-yellow-500 transition-colors">
+              Agendar Auditoría
+            </a>
+          </div>
 
-  </div>
-</nav>
+        </div>
+      </nav>
+
       {/* --- HERO SECTION (LA ENTRADA) --- */}
       <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 overflow-hidden">
         {/* Efecto de luz dorada de fondo */}
@@ -218,47 +220,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Formulario Visual (Sin funcionalidad en esta versión, solo diseño) */}
-          <div className="bg-[#0a0a0a] border border-gray-800 p-8 rounded-3xl shadow-2xl relative">
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-yellow-600/10 blur-[60px] rounded-full pointer-events-none"></div>
-
-            <form className="space-y-5 relative z-10">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <label className="text-sm text-gray-400 font-medium ml-1">Nombre</label>
-                  <input type="text" placeholder="Tu nombre" className="w-full bg-zinc-900/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-900 transition-all" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm text-gray-400 font-medium ml-1">Empresa</label>
-                  <input type="text" placeholder="Nombre negocio" className="w-full bg-zinc-900/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-900 transition-all" />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm text-gray-400 font-medium ml-1">Email</label>
-                <input type="email" placeholder="tu@email.com" className="w-full bg-zinc-900/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-900 transition-all" />
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm text-gray-400 font-medium ml-1">Teléfono</label>
-                <input type="tel" placeholder="+34 600 000 000" className="w-full bg-zinc-900/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-900 transition-all" />
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm text-gray-400 font-medium ml-1">¿Qué necesitas?</label>
-                <textarea rows={4} placeholder="Cuéntanos brevemente tu caso..." className="w-full bg-zinc-900/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-900 transition-all resize-none"></textarea>
-              </div>
-
-              <div className="pt-2">
-                <button type="button" className="w-full bg-yellow-500 text-black font-bold py-4 rounded-xl hover:bg-yellow-400 transition-all transform hover:scale-[1.02] shadow-[0_0_15px_rgba(234,179,8,0.4)]">
-                  ENVIAR SOLICITUD
-                </button>
-                <p className="text-center text-xs text-gray-600 mt-4">
-                  Al enviar aceptas nuestra <Link href="/legal" className="underline hover:text-gray-400">política de privacidad</Link>.
-                </p>
-              </div>
-            </form>
-          </div>
+          {/* === AQUI CARGAMOS EL FORMULARIO DE VERDAD === */}
+          <ContactForm />
 
         </div>
       </section>
