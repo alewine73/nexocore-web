@@ -32,7 +32,7 @@ export default function ContactForm() {
 
   try {
     // 1. Enviar a tu webhook de N8N (como siempre)
-    const response = await fetch("https://machine.nexocore.es/webhook-test/Contacto", {
+    const response = await fetch("https://machine.nexocore.es/webhook/Contacto", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
