@@ -214,7 +214,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-500 uppercase font-bold">Teléfono / WhatsApp</p>
-                  <a href="tel:+34644025037" className="text-lg hover:text-yellow-400 transition-colors">644 02 50 37</a>
+                  <a href="tel:+34684709825" className="text-lg hover:text-yellow-400 transition-colors">684 70 98 25</a>
                 </div>
               </div>
             </div>
