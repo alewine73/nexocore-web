@@ -210,7 +210,7 @@ export default function ServiciosPage() {
               </div>
               <div className="p-4 rounded-xl bg-zinc-900 border border-white/10">
                 <p className="text-xs text-gray-500 uppercase font-bold">Teléfono</p>
-                <p className="text-white">644 02 50 37</p>
+                <p className="text-white">684709825</p>
               </div>
             </div>
           </div>
