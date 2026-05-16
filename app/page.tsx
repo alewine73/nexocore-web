@@ -1,7 +1,7 @@
 import TrackPageView from "@/components/TrackPageView";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
-import { Bot, BarChart3, BrainCircuit, ChevronRight, CheckCircle2, Users, Star, MessageSquare } from "lucide-react";
+import { Bot, BarChart3, BrainCircuit, ChevronRight, CheckCircle2, Users, Star, MessageSquare, Award, TrendingUp } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -30,6 +30,10 @@ export default function Home() {
             <Link href="/servicios" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
               Nuestros Servicios
             </Link>
+
+            <a href="#casos-exito" className="text-sm font-medium text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+              <Award size={16} /> Casos de Éxito
+            </a>
 
             <Link href="/familia" className="text-sm font-bold text-yellow-500 hover:text-yellow-400 transition-colors flex items-center gap-2">
               <Star size={16} /> Familia Dorada
@@ -139,6 +143,139 @@ export default function Home() {
               </ul>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* --- CASOS DE ÉXITO (SOCIAL PROOF + SEO) --- */}
+      <section id="casos-exito" className="py-24 px-6 bg-zinc-950 relative overflow-hidden">
+        {/* Efecto de luz de fondo */}
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-yellow-600/5 blur-[120px] rounded-full pointer-events-none" />
+        
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full border border-yellow-500/30 bg-yellow-500/10 text-yellow-400 text-sm font-medium">
+              <Award size={16} />
+              RESULTADOS REALES DE NUESTROS CLIENTES
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Casos de Éxito: Empresas que Escalaron con <span className="text-yellow-500">IA y Marketing Digital</span>
+            </h2>
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+              Descubre cómo hemos ayudado a empresas a reducir costes, automatizar operaciones y multiplicar sus ingresos.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Caso 1 */}
+            <div className="bg-gradient-to-br from-blue-900/20 to-black border border-blue-500/30 rounded-2xl p-8 hover:border-blue-500/60 transition-all duration-300 group">
+              <div className="flex items-start justify-between mb-6">
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-1">E-commerce B2B</h3>
+                  <p className="text-sm text-gray-400">Sector: Distribución Industrial</p>
+                </div>
+                <div className="text-blue-400 group-hover:scale-110 transition-transform">
+                  <TrendingUp size={28} />
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="bg-black/50 border border-blue-500/20 rounded-lg p-4">
+                  <p className="text-xs text-gray-500 uppercase font-bold mb-2">Reto</p>
+                  <p className="text-sm text-gray-300">Procesamiento manual de 500+ pedidos diarios, errores frecuentes y equipo saturado.</p>
+                </div>
+
+                <div className="bg-black/50 border border-blue-500/20 rounded-lg p-4">
+                  <p className="text-xs text-gray-500 uppercase font-bold mb-2">Solución NexoCore</p>
+                  <p className="text-sm text-gray-300">Sistema IA para automatizar pedidos + clasificación inteligente + generación de reportes 24/7</p>
+                </div>
+
+                <div className="bg-gradient-to-r from-blue-900/30 to-transparent border border-blue-500/40 rounded-lg p-4">
+                  <p className="text-xs text-blue-400 uppercase font-bold mb-3">Resultados</p>
+                  <ul className="space-y-2 text-sm text-gray-300">
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-yellow-500" /> 85% reducción de errores</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-yellow-500" /> 3 miembros del equipo reasignados</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-yellow-500" /> +40% velocidad procesamiento</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Caso 2 */}
+            <div className="bg-gradient-to-br from-purple-900/20 to-black border border-purple-500/30 rounded-2xl p-8 hover:border-purple-500/60 transition-all duration-300 group">
+              <div className="flex items-start justify-between mb-6">
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-1">Agencia de Servicios</h3>
+                  <p className="text-sm text-gray-400">Sector: Consultoría Digital</p>
+                </div>
+                <div className="text-purple-400 group-hover:scale-110 transition-transform">
+                  <TrendingUp size={28} />
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="bg-black/50 border border-purple-500/20 rounded-lg p-4">
+                  <p className="text-xs text-gray-500 uppercase font-bold mb-2">Reto</p>
+                  <p className="text-sm text-gray-300">Bajo engagement en redes, leads no cualificados, sin sistemas de venta estructurados.</p>
+                </div>
+
+                <div className="bg-black/50 border border-purple-500/20 rounded-lg p-4">
+                  <p className="text-xs text-gray-500 uppercase font-bold mb-2">Solución NexoCore</p>
+                  <p className="text-sm text-gray-300">Estrategia de marketing digital + funnels de venta + agente IA para seguimiento de leads</p>
+                </div>
+
+                <div className="bg-gradient-to-r from-purple-900/30 to-transparent border border-purple-500/40 rounded-lg p-4">
+                  <p className="text-xs text-purple-400 uppercase font-bold mb-3">Resultados</p>
+                  <ul className="space-y-2 text-sm text-gray-300">
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-yellow-500" /> +320% leads cualificados</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-yellow-500" /> 68% tasa de conversión leads</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-yellow-500" /> 5 clientes nuevos/mes</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Caso 3 */}
+            <div className="bg-gradient-to-br from-green-900/20 to-black border border-green-500/30 rounded-2xl p-8 hover:border-green-500/60 transition-all duration-300 group">
+              <div className="flex items-start justify-between mb-6">
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-1">SaaS en Crecimiento</h3>
+                  <p className="text-sm text-gray-400">Sector: Software as a Service</p>
+                </div>
+                <div className="text-green-400 group-hover:scale-110 transition-transform">
+                  <TrendingUp size={28} />
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="bg-black/50 border border-green-500/20 rounded-lg p-4">
+                  <p className="text-xs text-gray-500 uppercase font-bold mb-2">Reto</p>
+                  <p className="text-sm text-gray-300">Churn alto (45%), atención al cliente manual, sin escalabilidad operativa.</p>
+                </div>
+
+                <div className="bg-black/50 border border-green-500/20 rounded-lg p-4">
+                  <p className="text-xs text-gray-500 uppercase font-bold mb-2">Solución NexoCore</p>
+                  <p className="text-sm text-gray-300">Chatbot IA + automatización soporte + sistema de retención inteligente</p>
+                </div>
+
+                <div className="bg-gradient-to-r from-green-900/30 to-transparent border border-green-500/40 rounded-lg p-4">
+                  <p className="text-xs text-green-400 uppercase font-bold mb-3">Resultados</p>
+                  <ul className="space-y-2 text-sm text-gray-300">
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-yellow-500" /> Churn reducido a 18%</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-yellow-500" /> +$150k MRR anual</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-yellow-500" /> 95% satisfacción cliente</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="mt-16 text-center">
+            <p className="text-gray-400 mb-6">¿Quieres ser el próximo caso de éxito?</p>
+            <a href="#contacto" className="inline-block px-8 py-4 bg-yellow-500 text-black font-bold rounded-full text-lg hover:bg-yellow-400 transition-all shadow-[0_0_20px_rgba(234,179,8,0.3)]">
+              Comienza tu Transformación Digital
+            </a>
           </div>
         </div>
       </section>
