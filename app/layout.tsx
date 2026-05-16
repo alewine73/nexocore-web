@@ -15,9 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NexoCore | Agencia de Automatización IA",
+  title: "NexoCore | Automatización IA + Marketing Digital en Valladolid",
   description:
-    "Automatiza tu negocio con Inteligencia Artificial. Recepcionistas virtuales, gestión de reservas y soluciones tecnológicas en Valladolid.",
+    "Escalamos tu negocio con Inteligencia Artificial y Marketing Digital. Automatizaciones, funnels de venta y sistemas inteligentes para aumentar ROI. Consultoría empresarial en Valladolid.",
+  keywords: "automatización IA, marketing digital, consultoría empresarial, funnels venta, inteligencia artificial Valladolid",
 };
 
 export default function RootLayout({
@@ -26,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       ><TrackingClient />

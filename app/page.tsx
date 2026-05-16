@@ -5,8 +5,9 @@ import { Bot, BarChart3, BrainCircuit, ChevronRight, CheckCircle2, Users, Star, 
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "NexoCore | Agencia de Automatización IA",
-  description: "Consultoría tecnológica en Valladolid. Inteligencia Artificial, Marketing y Estrategia de Negocio.",
+  title: "Escalamos tu Negocio: IA, Automatización y Marketing Digital",
+  description: "Transforma tu negocio con sistemas inteligentes. Automatización IA, marketing digital y consultoría empresarial. Reducción de costes operativos + aumento de ingresos. Servicio premium en Valladolid.",
+  keywords: "escalamiento negocio, automatización inteligente, funnels marketing, IA empresarial, soluciones digitales Valladolid",
   icons: {
     icon: '/favicon.ico',
   },
@@ -53,23 +54,23 @@ export default function Home() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow-500"></span>
             </span>
-            AGENCIA DE INTELIGENCIA ARTIFICIAL Y MARKETING
+            AUTOMATIZACIÓN IA | MARKETING DIGITAL | CONSULTORÍA EMPRESARIAL
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 tracking-tight leading-tight">
-            Escalamos tu Negocio mediante <br className="hidden md:block" />
+            Transforma tu Negocio con <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-500 to-amber-600 drop-shadow-sm">
-              Ecosistemas de IA y Marketing
+              Automatización IA + Marketing Digital
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Hacemos que tu negocio valga oro. Integramos sistemas inteligentes que reducen costes operativos y disparan tu facturación sin que tú tengas que trabajar más.
+            Automatiza procesos operativos, escalamos con marketing digital inteligente. Tu negocio crece sin que incrementes gastos. Sistemas de IA + funnels de venta + atención premium.
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <a href="#contacto" className="px-8 py-4 bg-yellow-500 text-black font-bold rounded-full text-lg hover:bg-yellow-400 transition-all shadow-[0_0_20px_rgba(234,179,8,0.3)] flex items-center justify-center gap-2">
-              Solicitar Consultoría <ChevronRight size={20} />
+              Auditória Digital Gratis <ChevronRight size={20} />
             </a>
           </div>
         </div>
@@ -82,9 +83,9 @@ export default function Home() {
           {/* FRASE DE ORO */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              "La clave del éxito es la capacidad de <span className="text-yellow-500 border-b-2 border-yellow-500">adaptarse a los cambios</span>."
+              Nuestros Servicios de <span className="text-yellow-500 border-b-2 border-yellow-500">Transformación Digital</span>
             </h2>
-            <p className="text-gray-500">El mercado no espera. Contrata nuestros servicios, no lo dudes.</p>
+            <p className="text-gray-500">Tres pilares para escalar tu negocio: Consultoría, Automatización IA y Marketing Digital.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -97,13 +98,13 @@ export default function Home() {
                   <Star size={40} />
                 </div>
                 <div className="text-center md:text-left">
-                  <h3 className="text-2xl font-bold text-white mb-2">Consultoría Empresarial de Viabilidad</h3>
-                  <p className="text-gray-300 leading-relaxed max-w-2xl">
-                    No empezamos nada sin números. Ofrecemos un análisis riguroso de tu proyecto antes de escribir una sola línea de código. Garantizamos la viabilidad práctica y calculamos el posible retorno de la inversión (ROI). Si no es rentable para ti, no lo hacemos.
+                <h3 className="text-2xl font-bold text-white mb-2">Consultoría Empresarial: Análisis de Viabilidad + ROI</h3>
+                <p className="text-gray-300 leading-relaxed max-w-2xl">
+                  Antes de implementar cualquier solución IA o marketing digital, hacemos un análisis riguroso de viabilidad y rentabilidad. No empezamos sin números. Calculamos el retorno real de tu inversión. Si no es rentable para ti, somos honestos y no lo hacemos.
                   </p>
                 </div>
                 <div className="ml-auto">
-                   <a href="#contacto" className="inline-block px-6 py-3 border border-yellow-500 text-yellow-500 font-bold rounded-full hover:bg-yellow-500 hover:text-black transition-all">Empezar Aquí</a>
+                   <a href="#contacto" className="inline-block px-6 py-3 border border-yellow-500 text-yellow-500 font-bold rounded-full hover:bg-yellow-500 hover:text-black transition-all">Solicitar Auditória</a>
                 </div>
               </div>
             </div>
@@ -115,7 +116,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-white">IA & Automatizaciones</h3>
               </div>
               <p className="text-gray-400 leading-relaxed text-sm mb-4">
-                Integramos sistemas basados en inteligencia artificial con el fin de <strong>reducir el coste de SOPs</strong> (Procedimientos Operativos) y agilizar el tiempo de ejecución en cualquier departamento.
+                Integramos agentes IA, asistentes virtuales y sistemas de automatización. Reducimos costes operativos hasta un 70% y operamos 24/7. Ideal para: atención al cliente, gestión de leads, data processing.
               </p>
               <ul className="space-y-2 text-xs text-gray-500">
                 <li className="flex gap-2"><CheckCircle2 size={14} className="text-yellow-500" /> Reducción de errores humanos</li>
@@ -130,7 +131,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-white">Marketing Digital & Funnels</h3>
               </div>
               <p className="text-gray-400 leading-relaxed text-sm mb-4">
-                Desde creación de funnels de venta completos y publicidad digital (Ads) hasta la gestión de equipos de ventas estructurados con Agentes de IA. No solo traemos tráfico, lo convertimos en clientes.
+                Creamos funnels de venta optimizados + publicidad digital estilo cine + gestión de equipos con agentes IA. No solo traemos tráfico, lo convertimos en clientes con ROI medible.
               </p>
               <ul className="space-y-2 text-xs text-gray-500">
                 <li className="flex gap-2"><CheckCircle2 size={14} className="text-yellow-500" /> Publicidad Profesional (Estilo Cine)</li>
@@ -151,12 +152,13 @@ export default function Home() {
             <Users className="w-16 h-16 text-gray-400 mx-auto mb-6" />
             
             <h2 className="text-3xl font-bold text-white mb-6">
-              "Los amigos se cuentan con los dedos de una mano..."
+              Familia Dorada: Tu Partner Estratégico en Transformación Digital
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed mb-8">
-              En NexoCore no tendrás un proveedor, tendrás una <strong>Familia</strong>. 
-              Somos un grupo selecto y aislado. No aceptamos a cualquiera. 
-              Si trabajas con nosotros, dispondrás de atención profesional y única siempre.
+              En NexoCore no somos solo un proveedor, somos tu <strong>Familia</strong>. 
+              Equipo selecto especializado en IA y marketing digital. 
+              Acceso directo a nuestros asistentes, directores y herramientas internas. 
+              Atención profesional y dedicada para el crecimiento de tu negocio.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 mb-10 text-left">
@@ -188,13 +190,13 @@ export default function Home() {
           
           <div className="space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
-              ¿Hablamos de Negocios?
+              Consultoría Gratuita: Analicemos tu Caso
             </h2>
             <p className="text-2xl text-yellow-500 font-medium">
-              "Hacemos que tu negocio valga oro."
+              Reducción de costes + Aumento de ingresos = ROI garantizado
             </p>
             <p className="text-gray-400 text-lg leading-relaxed">
-              Recibirás una recepción de lujo en el grupo NexoCore. Rellena el formulario y te llamaremos <strong>muy rápidamente</strong>.
+              Rellena el formulario para agendar tu auditória digital gratuita. Analizaremos tu negocio, oportunidades de automatización IA y potencial de crecimiento con marketing digital. Te llamaremos en menos de 24 horas.
             </p>
             
             <div className="pt-8 space-y-6">
