@@ -5,9 +5,9 @@ import { Bot, BarChart3, BrainCircuit, ChevronRight, CheckCircle2, Users, Star, 
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Escalamos tu Negocio: IA, Automatización y Marketing Digital",
-  description: "Transforma tu negocio con sistemas inteligentes. Automatización IA, marketing digital y consultoría empresarial. Reducción de costes operativos + aumento de ingresos. Servicio premium en Valladolid.",
-  keywords: "escalamiento negocio, automatización inteligente, funnels marketing, IA empresarial, soluciones digitales Valladolid",
+  title: "Automatización IA + Marketing Digital para Escalar tu Negocio | NexoCore Valladolid",
+  description: "Transforma tu negocio con automatización IA, marketing digital estratégico y consultoría empresarial. Reduce costes operativos 70%, aumenta ingresos +300% ROI. Consultoría premium en Valladolid.",
+  keywords: "automatización IA, marketing digital, escalamiento negocio, funnels venta, consultoría empresarial, transformación digital, IA Valladolid, sistemas automatizados, agentes IA, chatbot empresarial, soluciones digitales",
   icons: {
     icon: '/favicon.ico',
   },
@@ -32,9 +32,9 @@ export default function Home() {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 tracking-tight leading-tight">
-            Transforma tu Negocio con <br className="hidden md:block" />
+            Automatización IA + Marketing Digital:<br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-500 to-amber-600 drop-shadow-sm">
-              Automatización IA + Marketing Digital
+              Escala tu Negocio hasta +300% ROI
             </span>
           </h1>
           
