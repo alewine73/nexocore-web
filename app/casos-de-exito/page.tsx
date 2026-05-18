@@ -209,14 +209,15 @@ export default function CasosDeExito() {
                 <div className="bg-gradient-to-b from-pink-900/30 to-transparent border border-pink-500/40 rounded-lg p-4 space-y-3">
                   <p className="text-xs text-pink-400 uppercase font-bold">Video IA: Promoción Personalizada</p>
                   <div className="relative w-full bg-black rounded-lg overflow-hidden aspect-video">
-                    <iframe
-                      className="w-full h-full"
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    <video
+                      className="w-full h-full object-cover"
+                      controls
+                      preload="metadata"
                       title="Video IA Peluquería Global - Promoción de Servicios"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      loading="lazy"
-                    />
+                    >
+                      <source src="/Video muestra.mp4" type="video/mp4" />
+                      Tu navegador no soporta la reproducción de video.
+                    </video>
                   </div>
                   <p className="text-xs text-gray-400">Este video fue generado con IA, personalizando promociones en tiempo real según datos del cliente.</p>
                 </div>
