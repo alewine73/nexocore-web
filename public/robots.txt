@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Directives for specific crawlers
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://nexocore.es/sitemap.xml
+
+# Additional sitemaps for different content types
+Sitemap: https://nexocore.es/sitemap-pages.xml
+Sitemap: https://nexocore.es/sitemap-services.xml
+
+# Cache settings
+Cache-Control: public, max-age=86400
