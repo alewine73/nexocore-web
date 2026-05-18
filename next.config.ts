@@ -99,12 +99,6 @@ const nextConfig: NextConfig = {
     pagesBufferLength: 5,
   },
 
-  // Internationalization (prepared for future multi-language support)
-  i18n: {
-    locales: ["es", "en"],
-    defaultLocale: "es",
-  },
-
   // Production source maps (disabled for smaller bundle)
   productionBrowserSourceMaps: false,
 };
