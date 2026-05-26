@@ -53,11 +53,11 @@ export const metadata: Metadata = {
       "Transforma tu negocio con automatización IA, marketing digital y consultoría empresarial. Sistemas inteligentes para aumentar ROI hasta 300% en Valladolid.",
     images: [
       {
-        url: "https://nexocore.es/og-image.jpg",
+        url: "https://nexocore.es/og-image.png",
         width: 1200,
         height: 630,
         alt: "NexoCore - Automatización IA y Marketing Digital",
-        type: "image/jpeg",
+        type: "image/png",
       },
       {
         url: "https://nexocore.es/og-image-square.jpg",
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     title: "NexoCore | Automatización IA + Marketing Digital",
     description:
       "Escalamos tu negocio con automatización IA y marketing digital. Reducción de costes + aumento de ingresos.",
-    images: ["https://nexocore.es/og-image.jpg"],
+    images: ["https://nexocore.es/og-image.png"],
   },
   applicationName: "NexoCore",
   appleWebApp: {

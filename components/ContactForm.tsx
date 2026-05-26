@@ -119,11 +119,11 @@ export default function ContactForm() {
             <button 
               type="submit" 
               disabled={status === "loading"}
-              className="w-full bg-yellow-500 text-black font-bold py-4 rounded-xl hover:bg-yellow-400 transition-all transform hover:scale-[1.02] shadow-[0_0_20px_rgba(234,179,8,0.3)] disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full bg-yellow-500 text-black font-bold py-4 rounded-xl hover:bg-yellow-400 transition-all transform hover:scale-[1.02] shadow-[0_0_20px_rgba(234,179,8,0.3)] disabled:bg-yellow-400 disabled:opacity-75 disabled:cursor-not-allowed flex items-center justify-center gap-2"
             >
               {status === "loading" ? (
                 <>
-                  <span className="w-4 h-4 border-2 border-black/30 border-t-black rounded-full animate-spin"></span>
+                  <span className="w-4 h-4 border-2 border-black/40 border-t-black rounded-full animate-spin"></span>
                   ENVIANDO...
                 </>
               ) : (
