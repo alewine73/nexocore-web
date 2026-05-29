@@ -115,7 +115,7 @@ export default function ContactForm() {
             <textarea name="mensaje" value={formData.mensaje} onChange={handleChange} rows={4} placeholder="Cuéntanos brevemente tu caso..." className="w-full bg-zinc-900/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-900 transition-all resize-none placeholder:text-gray-600"></textarea>
           </div>
 
-          <div className="pt-2">
+          <div className="pt-2 space-y-3">
             <button 
               type="submit" 
               disabled={status === "loading"}
@@ -130,12 +130,22 @@ export default function ContactForm() {
                 "ENVIAR SOLICITUD"
               )}
             </button>
+
+            <a 
+              href={`https://wa.me/34684709825?text=${encodeURIComponent(`Hola, soy ${formData.nombre} de ${formData.empresa}.\n\nMi email: ${formData.email}\nTeléfono: ${formData.telefono}\n\n${formData.mensaje || 'Quiero conocer sobre vuestros servicios'}\n\nGracias.`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-green-600 text-white font-bold py-4 rounded-xl hover:bg-green-500 transition-all transform hover:scale-[1.02] shadow-[0_0_20px_rgba(34,197,94,0.3)] flex items-center justify-center gap-2"
+            >
+              💬 O ENVIAR POR WHATSAPP
+            </a>
+
             <p className="text-center text-xs text-gray-600 mt-4">
               Al enviar aceptas nuestra <Link href="/legal" className="underline hover:text-gray-400 transition-colors">política de privacidad</Link>.
             </p>
             {status === "error" && (
               <div className="mt-4 p-3 bg-red-900/20 border border-red-500/30 rounded-lg text-red-400 text-sm text-center">
-                ❌ Hubo un error al conectar con el servidor. Por favor, inténtalo de nuevo o escríbenos por WhatsApp.
+                ❌ Hubo un error. Puedes enviar por WhatsApp arriba (botón verde) o inténtalo de nuevo.
               </div>
             )}
           </div>
