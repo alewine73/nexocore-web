@@ -1,6 +1,6 @@
-import TrackPageView from "@/components/TrackPageView";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
+import WhatsAppLeadLink from "@/components/WhatsAppLeadLink";
 import { Bot, BarChart3, BrainCircuit, ChevronRight, CheckCircle2, Users, Star, MessageSquare, Award, TrendingUp } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -725,7 +725,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-500 uppercase font-bold">Teléfono / WhatsApp</p>
-                  <a href="tel:+34684709825" className="text-lg hover:text-yellow-400 transition-colors">684 70 98 25</a>
+                  <WhatsAppLeadLink className="text-lg hover:text-yellow-400 transition-colors">684 70 98 25</WhatsAppLeadLink>
                 </div>
               </div>
             </div>

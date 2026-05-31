@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+
 function getCookie(name: string) {
   if (typeof document === "undefined") return undefined;
 
@@ -27,46 +28,36 @@ export default function ContactForm() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setStatus("loading");
+    e.preventDefault();
+    setStatus("loading");
 
-  try {
-    // 1. Enviar a tu webhook de N8N (como siempre)
-    const response = await fetch("https://machine.nexocore.es/webhook/Contacto", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...formData,
+          fbp: getCookie("_fbp"),
+          fbc: getCookie("_fbc"),
+          eventSourceUrl: window.location.href,
+        }),
+      });
 
-    // 2. Enviar a Meta Conversion API (nuestro plugin)
-    const fbp = getCookie("_fbp");
-    const fbc = getCookie("_fbc");
+      if (response.ok) {
+        if (typeof window !== "undefined" && window.fbq) {
+          window.fbq("track", "Lead");
+        }
 
-    await fetch("/api/fb-lead", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        email: formData.email,
-        phone: formData.telefono,
-        name: formData.nombre,
-        fbp,
-        fbc,
-        eventSourceUrl: window.location.href,
-      }),
-    });
-
-    // 3. Estado final del formulario
-    if (response.ok) {
-      setStatus("success");
-      setFormData({ nombre: "", empresa: "", email: "", telefono: "", mensaje: "" });
-    } else {
+        setStatus("success");
+        setFormData({ nombre: "", empresa: "", email: "", telefono: "", mensaje: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      console.error(error);
       setStatus("error");
     }
-  } catch (error) {
-    console.error(error);
-    setStatus("error");
-  }
-};
+  };
 
   return (
     <div className="bg-[#0a0a0a] border border-gray-800 p-8 rounded-3xl shadow-2xl relative overflow-hidden group hover:border-yellow-500/30 transition-all duration-500">
