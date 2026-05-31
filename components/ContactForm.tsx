@@ -32,6 +32,12 @@ export default function ContactForm() {
     e.preventDefault();
     setStatus("loading");
 
+    const eventId = crypto.randomUUID();
+
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "Lead", {}, { eventID: eventId });
+    }
+
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -41,14 +47,11 @@ export default function ContactForm() {
           fbp: getCookie("_fbp"),
           fbc: getCookie("_fbc"),
           eventSourceUrl: window.location.href,
+          eventId,
         }),
       });
 
       if (response.ok) {
-        if (typeof window !== "undefined" && window.fbq) {
-          window.fbq("track", "Lead");
-        }
-
         setStatus("success");
         setFormData({ nombre: "", empresa: "", email: "", telefono: "", mensaje: "" });
       } else {
