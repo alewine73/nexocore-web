@@ -16,6 +16,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const contentSecurityPolicy = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://connect.facebook.net https://*.facebook.net https://www.facebook.com https://*.facebook.com",
+  "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data: blob: https://www.facebook.com https://*.facebook.com",
+  "connect-src 'self' https://www.facebook.com https://*.facebook.com https://connect.facebook.net https://*.facebook.net https://graph.facebook.com",
+  "font-src 'self'",
+  "media-src 'self'",
+].join("; ");
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://nexocore.es"),
   title: "NexoCore | Automatización IA + Marketing Digital en Valladolid",
@@ -135,10 +145,7 @@ export default function RootLayout({
         <meta name="MobileOptimized" content="width" />
 
         {/* Content Security Policy for security */}
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' connect.facebook.net www.facebook.com https://cdn.*.net; style-src 'self' 'unsafe-inline'"
-        />
+        <meta httpEquiv="Content-Security-Policy" content={contentSecurityPolicy} />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
