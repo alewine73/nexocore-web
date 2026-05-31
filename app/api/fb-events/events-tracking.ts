@@ -15,7 +15,7 @@ if (typeof window !== "undefined") {
     const fbp = getCookie("_fbp");
     const fbc = getCookie("_fbc");
 
-    await fetch("/api/fb-event", {
+    await fetch("/api/fb-events", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
