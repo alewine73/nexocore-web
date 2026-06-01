@@ -682,8 +682,8 @@ export default function Home() {
               {/* CTA Button */}
               <div className="mt-12 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
                 <p className="text-gray-400">Únete a la Familia Dorada y transforma tu negocio</p>
-                <Link href="/familia" className="inline-block px-8 py-4 bg-gradient-gold text-black font-bold rounded-full text-lg hover:scale-105 transform transition-all shadow-golden-lg flex items-center justify-center gap-2">
-                  Conoce al Equipo <ChevronRight size={20} />
+                <Link href="/familia" className="group inline-flex px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold rounded-full text-lg hover:from-yellow-400 hover:to-yellow-500 transition-all transform hover:scale-105 shadow-[0_0_30px_rgba(234,179,8,0.4)] items-center justify-center gap-2 shrink-0">
+                  Conoce al Equipo <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
 
