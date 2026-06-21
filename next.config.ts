@@ -72,8 +72,8 @@ const nextConfig: NextConfig = {
   // Redirects for SEO
   redirects: async () => {
     return [
-      // Add redirects for moved pages or URL changes
-      // Example: { source: "/old-page", destination: "/new-page", permanent: true }
+      { source: "/casos-de-exito", destination: "/como-funciona", permanent: true },
+      { source: "/servicios", destination: "/como-funciona", permanent: true },
     ];
   },
 

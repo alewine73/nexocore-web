@@ -5,9 +5,9 @@ import { Bot, BarChart3, BrainCircuit, ChevronRight, CheckCircle2, Users, Star, 
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Automatización IA + Marketing Digital para Escalar tu Negocio | NexoCore Valladolid",
-  description: "Transforma tu negocio con automatización IA, marketing digital estratégico y consultoría empresarial. Reduce costes operativos 70%, aumenta ingresos +300% ROI. Consultoría premium en Valladolid.",
-  keywords: "automatización IA, marketing digital, escalamiento negocio, funnels venta, consultoría empresarial, transformación digital, IA Valladolid, sistemas automatizados, agentes IA, chatbot empresarial, soluciones digitales",
+  title: "NexoCore | Chatbot WhatsApp e Instagram para Fisioterapeutas y Constructoras",
+  description: "Automatiza la atención al cliente de tu clínica de fisioterapia o constructora con IA. Responde en segundos, agenda citas y nunca pierdas un cliente. Demo gratuita.",
+  keywords: "chatbot whatsapp fisioterapia, automatización atención al cliente, chatbot instagram constructora, agente IA, respuesta automática 24/7, Valladolid",
   icons: {
     icon: '/favicon.ico',
   },
@@ -50,35 +50,27 @@ export default function Home() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-yellow-500"></span>
             </span>
-            <span className="flex gap-2">
-              <span>🤖 AUTOMATIZACIÓN IA</span>
-              <span className="text-yellow-500/50">•</span>
-              <span>📈 MARKETING DIGITAL</span>
-              <span className="text-yellow-500/50">•</span>
-              <span>💼 CONSULTORÍA</span>
-            </span>
+            CHATBOT IA · WHATSAPP · INSTAGRAM
           </div>
 
           {/* Headline Principal */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 tracking-tight leading-tight max-w-5xl mx-auto">
-            Automatización IA <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-500 to-amber-600 drop-shadow-lg">+ Marketing Digital</span>
+            Tu próximo paciente escribió anoche. <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-500 to-amber-600 drop-shadow-lg">Nadie respondió.</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
-            Escalamos tu negocio sin incrementar gastos. 
-            <strong className="block text-yellow-400 font-semibold mt-2">Reducción de costes 70% + Aumento de ingresos +300% ROI</strong>
+            Automatizamos tu atención al cliente en WhatsApp e Instagram. Responde en segundos, agenda citas sola y no pierdas a nadie más.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
             <a href="#contacto" className="group px-8 py-5 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold rounded-full text-lg hover:from-yellow-400 hover:to-yellow-500 transition-all transform hover:scale-105 shadow-[0_0_30px_rgba(234,179,8,0.4)] flex items-center justify-center gap-3">
-              <span>Auditoría Digital Gratuita</span>
+              <span>Quiero una Demo Gratuita</span>
               <ChevronRight size={22} className="group-hover:translate-x-1 transition-transform" />
             </a>
-            <a href="#casos-exito" className="px-8 py-5 border-2 border-yellow-500 text-yellow-500 font-bold rounded-full text-lg hover:bg-yellow-500/10 transition-all transform hover:scale-105 flex items-center justify-center gap-2">
-              <Award size={20} />
-              Ver Casos de Éxito
+            <a href="#como-funciona" className="px-8 py-5 border-2 border-yellow-500 text-yellow-500 font-bold rounded-full text-lg hover:bg-yellow-500/10 transition-all transform hover:scale-105 flex items-center justify-center gap-2">
+              Ver cómo funciona
             </a>
           </div>
 
@@ -87,22 +79,22 @@ export default function Home() {
             <div className="group relative">
               <div className="absolute inset-0 bg-yellow-500/10 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <div className="relative bg-black/40 border border-yellow-500/20 rounded-xl p-6 backdrop-blur-sm hover:border-yellow-500/40 transition-all">
-                <p className="text-4xl font-bold text-yellow-400 mb-2">+50</p>
-                <p className="text-sm text-gray-400">Empresas Transformadas</p>
+                <p className="text-4xl font-bold text-yellow-400 mb-2">&lt; 2 min</p>
+                <p className="text-sm text-gray-400">Tiempo de respuesta automático</p>
               </div>
             </div>
             <div className="group relative">
               <div className="absolute inset-0 bg-yellow-500/10 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <div className="relative bg-black/40 border border-yellow-500/20 rounded-xl p-6 backdrop-blur-sm hover:border-yellow-500/40 transition-all">
-                <p className="text-4xl font-bold text-yellow-400 mb-2">70%</p>
-                <p className="text-sm text-gray-400">Reducción Costes Promedio</p>
+                <p className="text-4xl font-bold text-yellow-400 mb-2">24/7</p>
+                <p className="text-sm text-gray-400">Disponibilidad sin descanso</p>
               </div>
             </div>
             <div className="group relative">
               <div className="absolute inset-0 bg-yellow-500/10 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <div className="relative bg-black/40 border border-yellow-500/20 rounded-xl p-6 backdrop-blur-sm hover:border-yellow-500/40 transition-all">
-                <p className="text-4xl font-bold text-yellow-400 mb-2">95%</p>
-                <p className="text-sm text-gray-400">Satisfacción Clientes</p>
+                <p className="text-4xl font-bold text-yellow-400 mb-2">0€</p>
+                <p className="text-sm text-gray-400">Coste de atención por mensaje</p>
               </div>
             </div>
           </div>
@@ -117,190 +109,182 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- SERVICIOS (VALUE STACK) --- */}
-      <section id="servicios" className="py-32 px-6 bg-gradient-to-b from-black via-zinc-950 to-black relative overflow-hidden">
-        {/* Efectos de fondo animados */}
+      {/* --- SECCIÓN PROBLEMA --- */}
+      <section id="problema" className="py-32 px-6 bg-gradient-to-b from-black via-zinc-950 to-black relative overflow-hidden">
+        <div className="absolute top-20 left-0 w-[400px] h-[400px] bg-yellow-600/5 blur-[100px] rounded-full pointer-events-none animate-blob"></div>
+        <div className="absolute bottom-20 right-0 w-[400px] h-[400px] bg-red-600/5 blur-[100px] rounded-full pointer-events-none animate-blob" style={{animationDelay: '2s'}}></div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+              Cada hora sin responder es dinero que se va.
+            </h2>
+            <p className="text-xl text-yellow-500 font-medium">Y tu competencia sí está respondiendo.</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="group relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative bg-gradient-to-br from-red-900/20 to-black border border-red-500/30 p-8 rounded-2xl hover:border-red-500/60 transition-all h-full">
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-500/50 to-transparent"></div>
+                <h3 className="text-xl font-bold text-white mb-4">Mensajes a las 10pm</h3>
+                <p className="text-gray-300">Tu paciente busca fisio por la noche. Escribe a tu WhatsApp. No hay respuesta. Al día siguiente tiene cita en otra clínica.</p>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="group relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative bg-gradient-to-br from-red-900/20 to-black border border-red-500/30 p-8 rounded-2xl hover:border-red-500/60 transition-all h-full">
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-500/50 to-transparent"></div>
+                <h3 className="text-xl font-bold text-white mb-4">Fines de semana perdidos</h3>
+                <p className="text-gray-300">Los domingos también llegan consultas. Sin atención automática, se van. Tú descansando, tu competencia creciendo.</p>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="group relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative bg-gradient-to-br from-red-900/20 to-black border border-red-500/30 p-8 rounded-2xl hover:border-red-500/60 transition-all h-full">
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-500/50 to-transparent"></div>
+                <h3 className="text-xl font-bold text-white mb-4">Seguimientos manuales</h3>
+                <p className="text-gray-300">Recordar llamar, confirmar citas, responder las mismas preguntas. Tiempo que no tienes. Dinero que pierdes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- SECCIÓN SOLUCIÓN --- */}
+      <section id="como-funciona" className="py-32 px-6 bg-gradient-to-b from-black via-zinc-950 to-black relative overflow-hidden">
+        <div className="absolute top-20 left-0 w-[400px] h-[400px] bg-yellow-600/5 blur-[100px] rounded-full pointer-events-none animate-blob"></div>
+        <div className="absolute bottom-20 right-0 w-[400px] h-[400px] bg-green-600/5 blur-[100px] rounded-full pointer-events-none animate-blob" style={{animationDelay: '2s'}}></div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-yellow-500/30 bg-yellow-500/10 text-yellow-400 text-sm font-medium">
+              <span className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></span>
+              ASÍ FUNCIONA NEXOCORE
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+              Un asistente inteligente <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-500 to-amber-600">que nunca duerme.</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Paso 1 */}
+            <div className="group relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative bg-gradient-to-br from-blue-900/20 to-black border border-blue-500/30 p-8 rounded-2xl hover:border-blue-500/60 transition-all h-full">
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
+                <div className="text-4xl font-bold text-blue-400 mb-4">01</div>
+                <h3 className="text-xl font-bold text-white mb-4">Lo configuramos para tu negocio</h3>
+                <p className="text-gray-300">Entrenamos el chatbot con toda la información de tu clínica: precios, servicios, horarios, preguntas frecuentes.</p>
+              </div>
+            </div>
+
+            {/* Paso 2 */}
+            <div className="group relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative bg-gradient-to-br from-purple-900/20 to-black border border-purple-500/30 p-8 rounded-2xl hover:border-purple-500/60 transition-all h-full">
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent"></div>
+                <div className="text-4xl font-bold text-purple-400 mb-4">02</div>
+                <h3 className="text-xl font-bold text-white mb-4">Responde por ti en segundos</h3>
+                <p className="text-gray-300">Cualquier mensaje en WhatsApp o Instagram recibe respuesta inmediata, a cualquier hora, sin que tengas que hacer nada.</p>
+              </div>
+            </div>
+
+            {/* Paso 3 */}
+            <div className="group relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative bg-gradient-to-br from-green-900/20 to-black border border-green-500/30 p-8 rounded-2xl hover:border-green-500/60 transition-all h-full">
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-green-500/50 to-transparent"></div>
+                <div className="text-4xl font-bold text-green-400 mb-4">03</div>
+                <h3 className="text-xl font-bold text-white mb-4">Tú solo gestionas lo importante</h3>
+                <p className="text-gray-300">Te llegan solo las consultas que realmente necesitan tu atención. El resto, automatizado y resuelto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- SECCIÓN PARA QUIÉN --- */}
+      <section id="para-quien" className="py-32 px-6 bg-gradient-to-b from-black via-zinc-950 to-black relative overflow-hidden">
         <div className="absolute top-20 left-0 w-[400px] h-[400px] bg-yellow-600/5 blur-[100px] rounded-full pointer-events-none animate-blob"></div>
         <div className="absolute bottom-20 right-0 w-[400px] h-[400px] bg-blue-600/5 blur-[100px] rounded-full pointer-events-none animate-blob" style={{animationDelay: '2s'}}></div>
 
         <div className="max-w-7xl mx-auto relative z-10">
-          
-          {/* HEADER */}
           <div className="text-center mb-20">
-            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-yellow-500/30 bg-yellow-500/10 text-yellow-400 text-sm font-medium">
-              <span className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></span>
-              SOLUCIONES PROBADAS
-            </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-              Tres Pilares del Crecimiento<br className="hidden md:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-500 to-amber-600">Empresarial</span>
+              Especialistas en dos sectores.
             </h2>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto">Consultoría + IA + Marketing Digital = Transformación Total</p>
+            <p className="text-xl text-yellow-500 font-medium">No hacemos todo para todos. Hacemos esto para vosotros.</p>
           </div>
 
-          {/* SERVICIOS GRID */}
-          <div className="space-y-8">
-            
-            {/* Servicio 1: Consultoría (DESTACADO - FULL WIDTH) */}
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-transparent rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              
-              <div className="relative bg-gradient-to-r from-yellow-900/30 via-black to-black border border-yellow-500/50 p-10 rounded-3xl overflow-hidden hover:border-yellow-500/80 transition-all duration-300 shadow-golden-lg">
-                
-                {/* Etiqueta destacada */}
-                <div className="absolute top-6 right-6 flex items-center gap-2 bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm">
-                  <Star size={16} fill="currentColor" />
-                  RECOMENDADO
-                </div>
-
-                <div className="grid md:grid-cols-12 gap-8 items-start">
-                  
-                  {/* Icono */}
-                  <div className="md:col-span-2 flex justify-center">
-                    <div className="relative">
-                      <div className="absolute inset-0 bg-yellow-500/20 blur-lg rounded-full"></div>
-                      <div className="relative h-24 w-24 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center shadow-golden animate-float">
-                        <Star size={48} className="text-white" fill="white" />
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Contenido */}
-                  <div className="md:col-span-7">
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Consultoría Empresarial: ROI Garantizado</h3>
-                    <p className="text-gray-300 leading-relaxed mb-4 text-lg">
-                      Antes de automatizar o escalar con marketing, <strong>analizamos números</strong>. No partimos de suposiciones, sino de data real.
-                    </p>
-                    <ul className="space-y-3">
-                      <li className="flex items-center gap-3 text-gray-300">
-                        <CheckCircle2 size={18} className="text-yellow-500 flex-shrink-0" />
-                        Análisis profundo de viabilidad y rentabilidad
-                      </li>
-                      <li className="flex items-center gap-3 text-gray-300">
-                        <CheckCircle2 size={18} className="text-yellow-500 flex-shrink-0" />
-                        Cálculo exacto del ROI esperado
-                      </li>
-                      <li className="flex items-center gap-3 text-gray-300">
-                        <CheckCircle2 size={18} className="text-yellow-500 flex-shrink-0" />
-                        Asesoramiento honesto: si no es rentable, te lo decimos
-                      </li>
-                    </ul>
-                  </div>
-
-                  {/* CTA */}
-                  <div className="md:col-span-3 flex flex-col gap-3">
-                    <a href="#contacto" className="px-6 py-4 bg-yellow-500 text-black font-bold rounded-full text-center hover:bg-yellow-400 transition-all shadow-[0_0_20px_rgba(234,179,8,0.4)] hover:scale-105 transform">
-                      Solicitar Auditoría
-                    </a>
-                    <p className="text-xs text-gray-500 text-center">✓ Gratuita y sin compromiso</p>
-                  </div>
-
-                </div>
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Para Fisioterapeutas */}
+            <div className="group relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative bg-gradient-to-br from-green-900/20 to-black border border-green-500/30 p-12 rounded-3xl hover:border-green-500/60 transition-all">
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-green-500/50 to-transparent"></div>
+                <div className="h-16 w-16 bg-green-500/20 text-green-500 rounded-lg flex items-center justify-center mb-6 text-2xl">🏥</div>
+                <h3 className="text-2xl font-bold text-white mb-6">Para Fisioterapeutas</h3>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-center gap-3 text-gray-300">
+                    <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    Agenda citas automáticamente
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-300">
+                    <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    Responde preguntas sobre precios y seguros
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-300">
+                    <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    Confirma y recuerda citas
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-300">
+                    <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    Capta pacientes nuevos 24/7
+                  </li>
+                </ul>
+                <a href="#contacto" className="inline-block px-6 py-3 bg-green-500 text-black font-bold rounded-full hover:bg-green-400 transition-all">
+                  Ver demo para fisios →
+                </a>
               </div>
             </div>
 
-            {/* Servicios 2 y 3 en grid */}
-            <div className="grid md:grid-cols-2 gap-8">
-
-              {/* Servicio 2: IA & Automatización */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
-                <div className="relative bg-gradient-to-br from-blue-900/20 to-black border border-blue-500/30 p-8 rounded-2xl hover:border-blue-500/60 transition-all duration-300 h-full hover:lift">
-                  
-                  {/* Efecto de brillo superior */}
-                  <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
-
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="relative">
-                      <div className="absolute inset-0 bg-blue-500/20 blur-lg rounded-lg"></div>
-                      <div className="relative h-14 w-14 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center shadow-lg">
-                        <Bot size={28} className="text-white" />
-                      </div>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-white">IA & Automatizaciones</h3>
-                      <p className="text-xs text-blue-300">Máquinas trabajando 24/7</p>
-                    </div>
-                  </div>
-
-                  <p className="text-gray-300 leading-relaxed mb-6">
-                    Agentes IA, asistentes virtuales y sistemas inteligentes que trabajan sin parar. Reducimos costes operativos hasta 70%.
-                  </p>
-
-                  <div className="space-y-3 mb-8">
-                    <div className="flex items-center gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-yellow-500"></div>
-                      <span className="text-sm text-gray-400">Procesamiento automático 24/7</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-yellow-500"></div>
-                      <span className="text-sm text-gray-400">Reducción 85% de errores humanos</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-yellow-500"></div>
-                      <span className="text-sm text-gray-400">Escalabilidad sin límite</span>
-                    </div>
-                  </div>
-
-                  <div className="text-xs font-bold text-yellow-400 flex items-center gap-2">
-                    <span className="text-lg">⚡</span> Reduce costes hasta 70%
-                  </div>
-
-                </div>
+            {/* Para Constructoras */}
+            <div className="group relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-transparent rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative bg-gradient-to-br from-orange-900/20 to-black border border-orange-500/30 p-12 rounded-3xl hover:border-orange-500/60 transition-all">
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orange-500/50 to-transparent"></div>
+                <div className="h-16 w-16 bg-orange-500/20 text-orange-500 rounded-lg flex items-center justify-center mb-6 text-2xl">🏗️</div>
+                <h3 className="text-2xl font-bold text-white mb-6">Para Constructoras</h3>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-center gap-3 text-gray-300">
+                    <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                    Filtra consultas de obra
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-300">
+                    <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                    Responde sobre presupuestos y plazos
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-300">
+                    <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                    Gestiona solicitudes de visita
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-300">
+                    <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                    Nunca pierdas un contacto comercial
+                  </li>
+                </ul>
+                <a href="#contacto" className="inline-block px-6 py-3 bg-orange-500 text-black font-bold rounded-full hover:bg-orange-400 transition-all">
+                  Ver demo para constructoras →
+                </a>
               </div>
-
-              {/* Servicio 3: Marketing Digital */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
-                <div className="relative bg-gradient-to-br from-purple-900/20 to-black border border-purple-500/30 p-8 rounded-2xl hover:border-purple-500/60 transition-all duration-300 h-full hover:lift">
-                  
-                  {/* Efecto de brillo superior */}
-                  <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent"></div>
-
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="relative">
-                      <div className="absolute inset-0 bg-purple-500/20 blur-lg rounded-lg"></div>
-                      <div className="relative h-14 w-14 bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
-                        <BarChart3 size={28} className="text-white" />
-                      </div>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-white">Marketing Digital & Funnels</h3>
-                      <p className="text-xs text-purple-300">Tráfico + Conversión = Dinero</p>
-                    </div>
-                  </div>
-
-                  <p className="text-gray-300 leading-relaxed mb-6">
-                    Funnels de venta profesionales + publicidad digital de alto rendimiento + retargeting inteligente. ROI medible en cada campaña.
-                  </p>
-
-                  <div className="space-y-3 mb-8">
-                    <div className="flex items-center gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-yellow-500"></div>
-                      <span className="text-sm text-gray-400">Publicidad estilo cine</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-yellow-500"></div>
-                      <span className="text-sm text-gray-400">Leads cualificados + conversión</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-yellow-500"></div>
-                      <span className="text-sm text-gray-400">Segmentación audiencia inteligente</span>
-                    </div>
-                  </div>
-
-                  <div className="text-xs font-bold text-yellow-400 flex items-center gap-2">
-                    <span className="text-lg">📈</span> ROI hasta +300%
-                  </div>
-
-                </div>
-              </div>
-
             </div>
           </div>
-
         </div>
       </section>
 
@@ -602,12 +586,12 @@ export default function Home() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                      Familia Dorada:<br />
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-500 to-amber-600">Tu Partner 360°</span>
+                      Más que un Proveedor. <br />
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-500 to-amber-600">Somos tu Equipo Tecnológico.</span>
                     </h2>
 
                     <p className="text-xl text-gray-300 leading-relaxed">
-                      No somos un proveedor más. Somos tu <strong>socio estratégico</strong> comprometido con el crecimiento real de tu negocio.
+                      No somos un proveedor más. Somos tu <strong>socio estratégico</strong> comprometido con el crecimiento real de tu negocio 24/7.
                     </p>
                   </div>
 
@@ -699,13 +683,13 @@ export default function Home() {
           
           <div className="space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
-              Consultoría Gratuita: Analicemos tu Caso
+              ¿Hablamos 15 minutos?
             </h2>
             <p className="text-2xl text-yellow-500 font-medium">
-              Reducción de costes + Aumento de ingresos = ROI garantizado
+              Te mostramos cómo funcionaría en tu negocio. Sin compromiso.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed">
-              Rellena el formulario para agendar tu auditória digital gratuita. Analizaremos tu negocio, oportunidades de automatización IA y potencial de crecimiento con marketing digital. Te llamaremos en menos de 24 horas.
+              En 15 minutos te mostramos una demo personalizada del chatbot para tu sector (fisioterapia o construcción). Sin compromisos, solo queremos que veas cómo podríamos ayudarte.
             </p>
             
             <div className="pt-8 space-y-6">

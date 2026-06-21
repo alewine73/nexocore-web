@@ -1,6 +1,13 @@
 import Link from "next/link";
 import { Users, Heart, Lock, Handshake, Zap, ArrowRight } from "lucide-react";
 import ContactForm from "../../components/ContactForm";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sobre NexoCore | Tu Equipo de Automatización IA",
+  description: "NexoCore es una agencia de automatización con IA especializada en fisioterapeutas y constructoras. Trato directo, sin intermediarios. Valladolid.",
+  keywords: "agencia automatización IA, equipo dedicado, soporte 24/7, especialistas chatbot WhatsApp",
+};
 
 export default function FamiliaPage() {
   return (
@@ -14,14 +21,14 @@ export default function FamiliaPage() {
           </Link>
           
           <div className="hidden md:flex items-center gap-8">
-            <Link href="/servicios" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
-              Nuestros Servicios
+            <Link href="/como-funciona" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
+              Cómo Funciona
             </Link>
-            <Link href="/familia" className="text-sm font-bold text-yellow-500 transition-colors">
-              Familia Dorada
-            </Link>
-            <Link href="/#contacto" className="bg-white text-black px-5 py-2 rounded-full font-bold hover:bg-gray-200 transition-all text-sm">
-              Contacto
+            <a href="/#para-quien" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
+              Para Quién
+            </a>
+            <Link href="/#contacto" className="bg-yellow-500 text-black px-5 py-2 rounded-full font-bold hover:bg-yellow-400 transition-all text-sm">
+              Ver Demo
             </Link>
           </div>
         </div>
@@ -128,19 +135,19 @@ export default function FamiliaPage() {
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <div className="p-8 rounded-3xl bg-zinc-900/20 border border-white/5 relative">
             <span className="absolute -top-4 left-8 text-5xl font-black text-zinc-800">01</span>
-            <h3 className="text-xl font-bold text-white mb-4 mt-4">Consultoría</h3>
-            <p className="text-gray-500 text-sm">Nos sentamos. Analizamos tu negocio. Vemos si podemos ayudarte de verdad.</p>
+            <h3 className="text-xl font-bold text-white mb-4 mt-4">Consulta Gratuita</h3>
+            <p className="text-gray-500 text-sm">Analizamos tu caso. Te mostramos una demo personalizada del chatbot. Sin compromiso.</p>
           </div>
           <div className="p-8 rounded-3xl bg-zinc-900/20 border border-yellow-500/20 relative shadow-lg shadow-yellow-900/5">
             <span className="absolute -top-4 left-8 text-5xl font-black text-yellow-900/50">02</span>
             <div className="absolute top-4 right-4 text-yellow-500"><Zap size={20} /></div>
-            <h3 className="text-xl font-bold text-white mb-4 mt-4">Implementación</h3>
-            <p className="text-gray-400 text-sm">Desplegamos la tecnología. Agentes de voz, automatizaciones y sistemas a medida para ti.</p>
+            <h3 className="text-xl font-bold text-white mb-4 mt-4">Configuración</h3>
+            <p className="text-gray-400 text-sm">Instalamos y entrenamos el chatbot con tu información. Conectamos tu WhatsApp e Instagram.</p>
           </div>
           <div className="p-8 rounded-3xl bg-zinc-900/20 border border-white/5 relative">
             <span className="absolute -top-4 left-8 text-5xl font-black text-zinc-800">03</span>
-            <h3 className="text-xl font-bold text-white mb-4 mt-4">Crecimiento</h3>
-            <p className="text-gray-500 text-sm">Ya eres parte de NexoCore. Tienes soporte, actualizaciones y mejoras constantes.</p>
+            <h3 className="text-xl font-bold text-white mb-4 mt-4">Activación y Soporte</h3>
+            <p className="text-gray-500 text-sm">En marcha en menos de una semana. Soporte continuo. Tu chatbot, siempre optimizado.</p>
           </div>
         </div>
       </section>
