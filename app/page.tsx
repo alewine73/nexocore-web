@@ -225,10 +225,14 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Para Fisioterapeutas */}
             <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative bg-gradient-to-br from-green-900/20 to-black border border-green-500/30 p-12 rounded-3xl hover:border-green-500/60 transition-all">
-                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-green-500/50 to-transparent"></div>
-                <div className="h-16 w-16 bg-green-500/20 text-green-500 rounded-lg flex items-center justify-center mb-6 text-2xl">🏥</div>
+              <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-transparent rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative bg-gradient-to-br from-yellow-900/20 to-black border border-yellow-500/30 p-12 rounded-3xl hover:border-yellow-500/60 transition-all">
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent"></div>
+                <div className="h-16 w-16 bg-yellow-500/20 rounded-lg flex items-center justify-center mb-6">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F5C518" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4.6 11h14.8M7 8V5c0-.6.4-1 1-1s1 .4 1 1v3M16 8V5c0-.6.4-1 1-1s1 .4 1 1v3M5 11h14c1.1 0 2 .9 2 2v7c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2v-7c0-1.1.9-2 2-2Zm5 3v4M14 14v4"/>
+                  </svg>
+                </div>
                 <h3 className="text-2xl font-bold text-white mb-6">Para Fisioterapeutas</h3>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center gap-3 text-gray-300">
@@ -248,7 +252,7 @@ export default function Home() {
                     Capta pacientes nuevos 24/7
                   </li>
                 </ul>
-                <a href="#contacto" className="inline-block px-6 py-3 bg-green-500 text-black font-bold rounded-full hover:bg-green-400 transition-all">
+                <a href="#contacto" className="inline-block px-6 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold rounded-full hover:from-yellow-400 hover:to-yellow-500 transition-all">
                   Ver demo para fisios →
                 </a>
               </div>
@@ -256,10 +260,14 @@ export default function Home() {
 
             {/* Para Constructoras */}
             <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-transparent rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative bg-gradient-to-br from-orange-900/20 to-black border border-orange-500/30 p-12 rounded-3xl hover:border-orange-500/60 transition-all">
-                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orange-500/50 to-transparent"></div>
-                <div className="h-16 w-16 bg-orange-500/20 text-orange-500 rounded-lg flex items-center justify-center mb-6 text-2xl">🏗️</div>
+              <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-transparent rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative bg-gradient-to-br from-yellow-900/20 to-black border border-yellow-500/30 p-12 rounded-3xl hover:border-yellow-500/60 transition-all">
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent"></div>
+                <div className="h-16 w-16 bg-yellow-500/20 rounded-lg flex items-center justify-center mb-6">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F5C518" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M6 9l6-4 6 4M4 9h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9Zm4 0l-2 8h2l1-8M10 9v8M14 9v8M18 9l-2 8"/>
+                  </svg>
+                </div>
                 <h3 className="text-2xl font-bold text-white mb-6">Para Constructoras</h3>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center gap-3 text-gray-300">
@@ -279,7 +287,7 @@ export default function Home() {
                     Nunca pierdas un contacto comercial
                   </li>
                 </ul>
-                <a href="#contacto" className="inline-block px-6 py-3 bg-orange-500 text-black font-bold rounded-full hover:bg-orange-400 transition-all">
+                <a href="#contacto" className="inline-block px-6 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold rounded-full hover:from-yellow-400 hover:to-yellow-500 transition-all">
                   Ver demo para constructoras →
                 </a>
               </div>
