@@ -32,13 +32,20 @@ export default function ContactForm() {
     e.preventDefault();
     setStatus("loading");
 
-    const eventId = crypto.randomUUID();
-
-    if (typeof window !== "undefined" && window.fbq) {
-      window.fbq("track", "Lead", {}, { eventID: eventId });
-    }
-
     try {
+      const eventId =
+        typeof crypto !== "undefined" && typeof crypto.randomUUID === "function"
+          ? crypto.randomUUID()
+          : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+
+      if (typeof window !== "undefined" && window.fbq) {
+        try {
+          window.fbq("track", "Lead", {}, { eventID: eventId });
+        } catch (fbqError) {
+          console.error(fbqError);
+        }
+      }
+
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

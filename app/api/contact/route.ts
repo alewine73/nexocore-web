@@ -26,11 +26,18 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Falta eventId para deduplicación Meta" }, { status: 400 });
     }
 
-    const n8nResponse = await fetch(N8N_WEBHOOK_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ nombre, empresa, email, telefono, mensaje }),
-    });
+    let n8nResponse: Response;
+    try {
+      n8nResponse = await fetch(N8N_WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ nombre, empresa, email, telefono, mensaje }),
+        signal: AbortSignal.timeout(8000),
+      });
+    } catch (n8nError) {
+      console.error("n8n webhook error:", n8nError);
+      return NextResponse.json({ error: "Error al enviar el formulario" }, { status: 502 });
+    }
 
     if (!n8nResponse.ok) {
       return NextResponse.json({ error: "Error al enviar el formulario" }, { status: 502 });
